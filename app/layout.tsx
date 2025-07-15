@@ -1,8 +1,9 @@
 import "./globals.css";
 export const metadata = {
-  title: "Coming Soon",
-  description: "Strona w budowie",
+  title: "Dr Paweł Pisera – doświadczony chirurg plastyczny i ogólny z Łodzi",
+  description: "Dr Paweł Pisera to ekspert chirurgii plastycznej i ogólnej w Łodzi. Oferuje zabiegi estetyczne i rekonstrukcyjne z indywidualnym podejściem i ponad 30-letnim doświadczeniem."
 };
+
 
 export default function RootLayout({
   children,
