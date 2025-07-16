@@ -34,7 +34,9 @@ export default function Navbar() {
           <Link href="/contact" className="hover:text-gray-500">{dictionary.menu.contact}</Link>
           <select
             value={locale}
-            onChange={(e) => setLocale(e.target.value as any)}
+            onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
+              setLocale(e.target.value as "pl" | "en")
+            }
             className="border border-gray-300 rounded px-2 py-1"
           >
             <option value="pl">PL</option>
@@ -90,7 +92,10 @@ export default function Navbar() {
           </Link>
           <select
             value={locale}
-            onChange={(e) => setLocale(e.target.value as any)}
+           onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
+            setLocale(e.target.value as "pl" | "en")
+          }
+
             className="border border-gray-300 rounded px-2 py-1"
           >
             <option value="pl">PL</option>
