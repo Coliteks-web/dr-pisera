@@ -1,0 +1,10 @@
+{
+  "menu": {
+    "home": "Strona główna",
+    "about": "O mnie",
+    "services": "Usługi",
+    "gallery": "Galeria",
+    "contact": "Kontakt",
+    "language": "Język"
+  }
+}

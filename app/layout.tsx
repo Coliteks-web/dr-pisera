@@ -1,9 +1,11 @@
-import "./globals.css";
+import "../app/globals.css";
+import { I18nProvider } from "./i18n/I18nContext";
+
 export const metadata = {
   title: "Dr Paweł Pisera – doświadczony chirurg plastyczny i ogólny z Łodzi",
-  description: "Dr Paweł Pisera to ekspert chirurgii plastycznej i ogólnej w Łodzi. Oferuje zabiegi estetyczne i rekonstrukcyjne z indywidualnym podejściem i ponad 30-letnim doświadczeniem."
+  description:
+    "Dr Paweł Pisera to ekspert chirurgii plastycznej i ogólnej w Łodzi. Oferuje zabiegi estetyczne i rekonstrukcyjne z indywidualnym podejściem i ponad 30-letnim doświadczeniem.",
 };
-
 
 export default function RootLayout({
   children,
@@ -18,7 +20,11 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <I18nProvider>
+          {children}
+        </I18nProvider>
+      </body>
     </html>
   );
 }
