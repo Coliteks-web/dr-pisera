@@ -25,7 +25,7 @@ export default function CookieBanner() {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-XXXXXXX');
+        gtag('config', 'G-P2X5YKRSGJ');
       `;
       document.head.appendChild(inlineScript);
 
