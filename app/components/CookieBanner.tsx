@@ -3,24 +3,20 @@
 import { useEffect, useState } from "react";
 
 export default function CookieBanner() {
-  const [consent, setConsent] = useState<null | "granted" | "denied" | "unset">("unset");
+  const [consent, setConsent] = useState<null | string>(null);
 
   useEffect(() => {
-    const savedConsent = localStorage.getItem("cookie_consent") as "granted" | "denied" | null;
-    if (savedConsent === "granted" || savedConsent === "denied") {
-      setConsent(savedConsent);
-    } else {
-      setConsent(null); // pokaż banner
-    }
+    const savedConsent = localStorage.getItem("cookie_consent");
+    setConsent(savedConsent);
   }, []);
 
   useEffect(() => {
     if (consent === "granted") {
       // Google Analytics
-      const gtagScript = document.createElement("script");
-      gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-P2X5YKRSGJ";
-      gtagScript.async = true;
-      document.head.appendChild(gtagScript);
+      const script = document.createElement("script");
+      script.src = "https://www.googletagmanager.com/gtag/js?id=G-P2X5YKRSGJ";
+      script.async = true;
+      document.head.appendChild(script);
 
       const inlineScript = document.createElement("script");
       inlineScript.innerHTML = `
@@ -30,6 +26,22 @@ export default function CookieBanner() {
         gtag('config', 'G-P2X5YKRSGJ');
       `;
       document.head.appendChild(inlineScript);
+
+      // Meta Pixel
+      const fbScript = document.createElement("script");
+      fbScript.innerHTML = `
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod ?
+        n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '123456789012345'); 
+        fbq('track', 'PageView');
+      `;
+      document.head.appendChild(fbScript);
     }
   }, [consent]);
 
@@ -38,26 +50,24 @@ export default function CookieBanner() {
     setConsent(value);
   };
 
-  // ⛔️ Nic nie renderujemy dopóki nie odczytamy consent
-  if (consent === "unset") return null;
-  if (consent !== null) return null;
+  if (consent) return null;
 
   return (
     <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-300 p-4 shadow-lg z-[100]">
-      <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0">
-        <p className="text-sm text-gray-700">
+      <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 text-center">
+        <div className="text-sm text-gray-700 w-full">
           Używamy plików cookies do analizy ruchu i personalizacji treści. Możesz zaakceptować lub odrzucić ich użycie.
-        </p>
-        <div className="flex space-x-4">
+        </div>
+        <div className="flex justify-center md:justify-end w-full space-x-4">
           <button
             onClick={() => handleConsent("granted")}
-            className="bg-black text-white text-sm px-4 py-2 rounded hover:bg-neutral-800 transition"
+            className="bg-neutral-800 text-white text-sm px-4 py-2 rounded hover:bg-neutral-700 transition"
           >
             Akceptuję
           </button>
           <button
             onClick={() => handleConsent("denied")}
-            className="bg-neutral-200 text-sm px-4 py-2 rounded hover:bg-neutral-300 transition"
+            className="bg-gray-200 text-sm px-4 py-2 rounded hover:bg-gray-300 transition"
           >
             Odrzucam
           </button>
