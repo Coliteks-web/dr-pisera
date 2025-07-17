@@ -1,5 +1,6 @@
 import "../app/globals.css";
 import { I18nProvider } from "./i18n/I18nContext";
+import CookieBanner from "./components/CookieBanner"; // 👈 dodany import
 
 export const metadata = {
   title: "Dr Paweł Pisera – doświadczony chirurg plastyczny i ogólny z Łodzi",
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body>
         <I18nProvider>
           {children}
+          <CookieBanner /> {/* 👈 dodany komponent */}
         </I18nProvider>
       </body>
     </html>

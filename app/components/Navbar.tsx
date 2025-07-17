@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useI18n } from "../i18n/I18nContext";
 
 export default function Navbar() {
@@ -23,8 +24,15 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
         {/* Logo */}
-        <Link href="/" className="text-xl font-bold text-gray-800">
-          {dictionary.menu.home}
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/webp/logo_wb_min.webp"
+            alt="Logo"
+            width={100}
+            height={20}
+            priority
+            className="object-contain"
+          />
         </Link>
 
         {/* Desktop */}
