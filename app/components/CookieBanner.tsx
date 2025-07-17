@@ -3,22 +3,24 @@
 import { useEffect, useState } from "react";
 
 export default function CookieBanner() {
-  const [consent, setConsent] = useState<null | string>(null);
-  const [isReady, setIsReady] = useState(false); // ⬅️ kontrola inicjalizacji
+  const [consent, setConsent] = useState<null | "granted" | "denied" | "unset">("unset");
 
   useEffect(() => {
-    const savedConsent = localStorage.getItem("cookie_consent");
-    setConsent(savedConsent);
-    setIsReady(true); // ⬅️ ustawiamy dopiero po odczytaniu
+    const savedConsent = localStorage.getItem("cookie_consent") as "granted" | "denied" | null;
+    if (savedConsent === "granted" || savedConsent === "denied") {
+      setConsent(savedConsent);
+    } else {
+      setConsent(null); // pokaż banner
+    }
   }, []);
 
   useEffect(() => {
     if (consent === "granted") {
       // Google Analytics
-      const script = document.createElement("script");
-      script.src = "https://www.googletagmanager.com/gtag/js?id=G-P2X5YKRSGJ";
-      script.async = true;
-      document.head.appendChild(script);
+      const gtagScript = document.createElement("script");
+      gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-P2X5YKRSGJ";
+      gtagScript.async = true;
+      document.head.appendChild(gtagScript);
 
       const inlineScript = document.createElement("script");
       inlineScript.innerHTML = `
@@ -28,22 +30,6 @@ export default function CookieBanner() {
         gtag('config', 'G-P2X5YKRSGJ');
       `;
       document.head.appendChild(inlineScript);
-
-      // Meta Pixel
-      const fbScript = document.createElement("script");
-      fbScript.innerHTML = `
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod ?
-        n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '123456789012345'); 
-        fbq('track', 'PageView');
-      `;
-      document.head.appendChild(fbScript);
     }
   }, [consent]);
 
@@ -52,24 +38,26 @@ export default function CookieBanner() {
     setConsent(value);
   };
 
-  if (!isReady || consent) return null; // ⬅️ dopóki nie gotowy albo zgoda ustawiona — nic nie pokazuj
+  // ⛔️ Nic nie renderujemy dopóki nie odczytamy consent
+  if (consent === "unset") return null;
+  if (consent !== null) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 shadow-[0_-2px_10px_rgba(0,0,0,0.05)] z-[100]">
-      <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-gray-800 leading-snug">
-          Ta strona wykorzystuje pliki cookies w celach analitycznych i marketingowych. Możesz zaakceptować lub odrzucić ich użycie.
+    <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-300 p-4 shadow-lg z-[100]">
+      <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0">
+        <p className="text-sm text-gray-700">
+          Używamy plików cookies do analizy ruchu i personalizacji treści. Możesz zaakceptować lub odrzucić ich użycie.
         </p>
-        <div className="flex space-x-3">
+        <div className="flex space-x-4">
           <button
             onClick={() => handleConsent("granted")}
-            className="bg-black text-white text-sm px-4 py-2 rounded-full hover:bg-neutral-800 transition"
+            className="bg-black text-white text-sm px-4 py-2 rounded hover:bg-neutral-800 transition"
           >
             Akceptuję
           </button>
           <button
             onClick={() => handleConsent("denied")}
-            className="bg-gray-100 text-sm px-4 py-2 rounded-full hover:bg-gray-200 text-gray-800 transition"
+            className="bg-neutral-200 text-sm px-4 py-2 rounded hover:bg-neutral-300 transition"
           >
             Odrzucam
           </button>
