@@ -24,8 +24,18 @@ export default function RootLayout({
       <body>
         <I18nProvider>
           {children}
-          <CookieBanner /> {/* 👈 dodany komponent */}
+          <CookieBanner /> {/* 👈 Cookie consent banner */}
         </I18nProvider>
+
+        {/* 👇 noscript Meta Pixel (statyczny, widoczny dla Facebooka) */}
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=1109474984377538&ev=PageView&noscript=1"
+          />
+        </noscript>
       </body>
     </html>
   );
