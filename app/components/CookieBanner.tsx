@@ -3,14 +3,17 @@
 import { useEffect, useState } from "react";
 
 export default function CookieBanner() {
-  const [showBanner, setShowBanner] = useState(false);
+  const [showBanner, setShowBanner] = useState<boolean | null>(null);
 
   useEffect(() => {
     const savedConsent = localStorage.getItem("cookie_consent");
     if (!savedConsent) {
       setShowBanner(true);
-    } else if (savedConsent === "granted") {
-      loadAnalyticsScripts();
+    } else {
+      if (savedConsent === "granted") {
+        loadAnalyticsScripts();
+      }
+      setShowBanner(false); // Ustaw false po sprawdzeniu
     }
   }, []);
 
@@ -19,7 +22,7 @@ export default function CookieBanner() {
     if (value === "granted") {
       loadAnalyticsScripts();
     }
-    setShowBanner(false); // Ukryj baner po decyzji
+    setShowBanner(false);
   };
 
   const loadAnalyticsScripts = () => {
@@ -29,42 +32,40 @@ export default function CookieBanner() {
     gaScript.async = true;
     document.head.appendChild(gaScript);
 
-    const gaInlineScript = document.createElement("script");
-    gaInlineScript.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-P2X5YKRSGJ');
-    `;
-    document.head.appendChild(gaInlineScript);
+    gaScript.onload = () => {
+      const inlineScript = document.createElement("script");
+      inlineScript.innerHTML = `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P2X5YKRSGJ');
+      `;
+      document.head.appendChild(inlineScript);
+    };
 
     // Meta Pixel
     const fbScript = document.createElement("script");
-    fbScript.innerHTML = `
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '1109474984377538');
-      fbq('track', 'PageView');
-    `;
-    document.head.appendChild(fbScript);
+    fbScript.src = "https://connect.facebook.net/en_US/fbevents.js";
+    fbScript.async = true;
+    fbScript.onload = () => {
+      if (typeof window.fbq === "undefined") {
+        window.fbq = function () {
+          window.fbq.callMethod
+            ? window.fbq.callMethod.apply(window.fbq, arguments)
+            : window.fbq.queue.push(arguments);
+        };
+        window.fbq.queue = [];
+        window.fbq.loaded = true;
+        window.fbq.version = "2.0";
+      }
 
-    // noscript pixel fallback
-    const noscriptImg = document.createElement("noscript");
-    noscriptImg.innerHTML = `
-      <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1109474984377538&ev=PageView&noscript=1"
-      />
-    `;
-    document.body.appendChild(noscriptImg);
+      window.fbq("init", "1109474984377538");
+      window.fbq("track", "PageView");
+    };
+    document.head.appendChild(fbScript);
   };
 
-  if (!showBanner) return null;
+  if (showBanner === null || showBanner === false) return null;
 
   return (
     <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-300 px-4 py-3 shadow-lg z-[100]">
@@ -89,4 +90,11 @@ export default function CookieBanner() {
       </div>
     </div>
   );
+}
+
+// @ts-ignore
+declare global {
+  interface Window {
+    fbq: any;
+  }
 }
