@@ -3,17 +3,14 @@
 import { useEffect, useState } from "react";
 
 export default function CookieBanner() {
-  const [showBanner, setShowBanner] = useState<boolean | null>(null);
+  const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
     const savedConsent = localStorage.getItem("cookie_consent");
     if (!savedConsent) {
       setShowBanner(true);
-    } else {
-      if (savedConsent === "granted") {
-        loadAnalyticsScripts();
-      }
-      setShowBanner(false); // Ustaw false po sprawdzeniu
+    } else if (savedConsent === "granted") {
+      loadAnalyticsScripts();
     }
   }, []);
 
@@ -32,40 +29,45 @@ export default function CookieBanner() {
     gaScript.async = true;
     document.head.appendChild(gaScript);
 
-    gaScript.onload = () => {
-      const inlineScript = document.createElement("script");
-      inlineScript.innerHTML = `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P2X5YKRSGJ');
-      `;
-      document.head.appendChild(inlineScript);
-    };
+    const gaInlineScript = document.createElement("script");
+    gaInlineScript.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P2X5YKRSGJ');
+    `;
+    document.head.appendChild(gaInlineScript);
 
     // Meta Pixel
     const fbScript = document.createElement("script");
-    fbScript.src = "https://connect.facebook.net/en_US/fbevents.js";
-    fbScript.async = true;
-    fbScript.onload = () => {
-      if (typeof window.fbq === "undefined") {
-        window.fbq = function () {
-          window.fbq.callMethod
-            ? window.fbq.callMethod.apply(window.fbq, arguments)
-            : window.fbq.queue.push(arguments);
+    fbScript.innerHTML = `
+      !function(f,b,e,v,n,t,s){
+        if(f.fbq) return;
+        n = f.fbq = function(...args){
+          if (n.callMethod) {
+            n.callMethod(...args);
+          } else {
+            n.queue.push(args);
+          }
         };
-        window.fbq.queue = [];
-        window.fbq.loaded = true;
-        window.fbq.version = "2.0";
-      }
-
-      window.fbq("init", "1109474984377538");
-      window.fbq("track", "PageView");
-    };
+        if(!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = true;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = true;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s);
+      }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1109474984377538');
+      fbq('track', 'PageView');
+    `;
     document.head.appendChild(fbScript);
   };
 
-  if (showBanner === null || showBanner === false) return null;
+  if (!showBanner) return null;
 
   return (
     <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-300 px-4 py-3 shadow-lg z-[100]">
@@ -90,11 +92,4 @@ export default function CookieBanner() {
       </div>
     </div>
   );
-}
-
-// @ts-ignore
-declare global {
-  interface Window {
-    fbq: any;
-  }
 }
