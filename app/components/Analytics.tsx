@@ -1,31 +1,42 @@
-"use client";
+'use client';
 
-import { useEffect } from "react";
+import Script from 'next/script';
+import { useEffect, useState } from 'react';
 
-const GA_MEASUREMENT_ID = "G-R6LW837FKS";
+export function Analytics() {
+  const [consent, setConsent] = useState<string | null>(null);
 
-export const Analytics = () => {
   useEffect(() => {
-    const consent = localStorage.getItem("cookie_consent");
-    if (consent !== "granted") return;
-
-    // Wstaw GA script
-    const script1 = document.createElement("script");
-    script1.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-    script1.async = true;
-    document.head.appendChild(script1);
-
-    const script2 = document.createElement("script");
-    script2.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '${GA_MEASUREMENT_ID}', {
-        anonymize_ip: true
-      });
-    `;
-    document.head.appendChild(script2);
+    const storedConsent = localStorage.getItem('cookie_consent');
+    console.log("GA: Cookie consent =", storedConsent); // 👈 DODANE
+    setConsent(storedConsent);
   }, []);
 
-  return null;
-};
+  if (consent !== 'granted') {
+    console.log("GA: Brak zgody, nie ładuję Analytics"); // 👈 DODANE
+    return null;
+  }
+
+  console.log("GA: Ładuję Analytics!"); // 👈 DODANE
+
+  return (
+    <>
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-R6LW837FKS"
+      />
+      <Script
+        id="ga-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-R6LW837FKS');
+          `,
+        }}
+      />
+    </>
+  );
+}

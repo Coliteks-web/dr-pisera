@@ -9,62 +9,17 @@ export default function CookieBanner() {
     const savedConsent = localStorage.getItem("cookie_consent");
     if (!savedConsent) {
       setShowBanner(true);
-    } else if (savedConsent === "granted") {
-      loadAnalyticsScripts();
     }
   }, []);
 
   const handleConsent = (value: "granted" | "denied") => {
     localStorage.setItem("cookie_consent", value);
-    if (value === "granted") {
-      loadAnalyticsScripts();
-    }
     setShowBanner(false);
-  };
 
-  const loadAnalyticsScripts = () => {
-    // Google Analytics
-    const gaScript = document.createElement("script");
-    gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-P2X5YKRSGJ";
-    gaScript.async = true;
-    document.head.appendChild(gaScript);
-
-    const gaInlineScript = document.createElement("script");
-    gaInlineScript.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-P2X5YKRSGJ');
-    `;
-    document.head.appendChild(gaInlineScript);
-
-    // Meta Pixel
-    const fbScript = document.createElement("script");
-    fbScript.innerHTML = `
-      !function(f,b,e,v,n,t,s){
-        if(f.fbq) return;
-        n = f.fbq = function(...args){
-          if (n.callMethod) {
-            n.callMethod(...args);
-          } else {
-            n.queue.push(args);
-          }
-        };
-        if(!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = true;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = true;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s);
-      }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '1109474984377538');
-      fbq('track', 'PageView');
-    `;
-    document.head.appendChild(fbScript);
+    // Odśwież stronę, by komponenty (Analytics / fbq) zadziałały
+    if (typeof window !== "undefined") {
+      window.location.reload();
+    }
   };
 
   if (!showBanner) return null;
