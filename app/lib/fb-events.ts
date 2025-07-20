@@ -1,4 +1,11 @@
-export const sendFbEvent = async (eventName: string, eventData?: Record<string, any>) => {
+type FbEventData = {
+  [key: string]: unknown;
+};
+
+export const sendFbEvent = async (
+  eventName: string,
+  eventData?: FbEventData
+) => {
   try {
     const consent = localStorage.getItem("cookie_consent");
     if (consent !== "granted") return;
