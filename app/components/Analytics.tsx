@@ -8,23 +8,21 @@ export function Analytics() {
 
   useEffect(() => {
     const storedConsent = localStorage.getItem('cookie_consent');
-    //console.log("GA: Cookie consent =", storedConsent); // 👈 DODANE
     setConsent(storedConsent);
   }, []);
 
   if (consent !== 'granted') {
-    //console.log("GA: Brak zgody, nie ładuję Analytics"); // 👈 DODANE
     return null;
   }
 
-  console.log("GA: Ładuję Analytics!"); // 👈 DODANE
-
   return (
     <>
+      {/* Ładowanie gtag.js */}
       <Script
         strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-R6LW837FKS"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
       />
+      {/* Inicjalizacja GA */}
       <Script
         id="ga-init"
         strategy="afterInteractive"
@@ -33,7 +31,9 @@ export function Analytics() {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-R6LW837FKS');
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
+              debug_mode: false
+            });
           `,
         }}
       />
