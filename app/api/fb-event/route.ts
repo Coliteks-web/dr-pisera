@@ -1,8 +1,9 @@
 // app/api/fb-event/route.ts
 import { NextRequest, NextResponse } from "next/server";
+import crypto from "crypto";
 
 export async function POST(req: NextRequest) {
-  const { eventName, eventId, email, phone, clientUserAgent } = await req.json();
+  const { eventName, eventId, email, phone } = await req.json();
 
   const FB_TOKEN = process.env.FB_TOKEN;
   const PIXEL_ID = process.env.FB_PIXEL_ID;
@@ -10,6 +11,13 @@ export async function POST(req: NextRequest) {
   if (!FB_TOKEN || !PIXEL_ID) {
     return NextResponse.json({ error: "Missing FB_TOKEN or FB_PIXEL_ID" }, { status: 500 });
   }
+
+  const ip = req.headers.get("x-forwarded-for") || "0.0.0.0";
+  const userAgent = req.headers.get("user-agent") || "";
+
+  const cookies = req.cookies;
+  const fbc = cookies.get('_fbc')?.value;
+  const fbp = cookies.get('_fbp')?.value;
 
   const payload = {
     data: [
@@ -21,7 +29,10 @@ export async function POST(req: NextRequest) {
         user_data: {
           em: email ? [hash(email)] : undefined,
           ph: phone ? [hash(phone)] : undefined,
-          client_user_agent: clientUserAgent,
+          ip_address: ip,
+          client_user_agent: userAgent,
+          fbp,
+          fbc,
         },
       },
     ],
@@ -37,8 +48,6 @@ export async function POST(req: NextRequest) {
   return NextResponse.json(data);
 }
 
-// Prosty SHA256 hash – Facebook wymaga hashowania email/telefonu
-import crypto from "crypto";
 function hash(value: string) {
   return crypto.createHash("sha256").update(value.trim().toLowerCase()).digest("hex");
 }

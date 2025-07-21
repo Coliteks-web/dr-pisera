@@ -6,21 +6,12 @@ export function Analytics() {
   const [consent, setConsent] = useState<string | null>(null);
 
   useEffect(() => {
-    const c = localStorage.getItem('cookie_consent');
-    console.log('🟡 cookie_consent:', c);
-    setConsent(c);
+    setConsent(localStorage.getItem('cookie_consent'));
   }, []);
 
   const gaId = process.env.NEXT_PUBLIC_GA_ID;
-  console.log('🟢 gaId:', gaId);
 
-  if (consent !== 'granted') {
-    console.log('🔴 Consent not granted → not loading GA');
-    return null;
-  }
-
-  if (!gaId) {
-    console.log('🔴 GA ID not found');
+  if (consent !== 'granted' || !gaId) {
     return null;
   }
 
