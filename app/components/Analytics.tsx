@@ -8,12 +8,12 @@ export function Analytics() {
 
   useEffect(() => {
     const storedConsent = localStorage.getItem('cookie_consent');
-    console.log("GA: Cookie consent =", storedConsent); // 👈 DODANE
+    //console.log("GA: Cookie consent =", storedConsent); // 👈 DODANE
     setConsent(storedConsent);
   }, []);
 
   if (consent !== 'granted') {
-    console.log("GA: Brak zgody, nie ładuję Analytics"); // 👈 DODANE
+    //console.log("GA: Brak zgody, nie ładuję Analytics"); // 👈 DODANE
     return null;
   }
 
