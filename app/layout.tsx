@@ -2,6 +2,8 @@ import '../app/globals.css';
 import { I18nProvider } from './i18n/I18nContext';
 import CookieBanner from './components/CookieBanner';
 import { Analytics } from './components/Analytics';
+import { FacebookPixel } from './components/FacebookPixel'; // jeśli layout jest w podfolderze
+
 
 export const metadata = {
   title: 'Twoja Strona',
@@ -26,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
           <CookieBanner />
           <Analytics />
+          <FacebookPixel />
         </I18nProvider>
       </body>
     </html>
