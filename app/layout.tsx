@@ -2,33 +2,28 @@ import '../app/globals.css';
 import { I18nProvider } from './i18n/I18nContext';
 import CookieBanner from './components/CookieBanner';
 import { Analytics } from './components/Analytics';
-import { FacebookPixel } from './components/FacebookPixel'; // jeśli layout jest w podfolderze
-
+import { FbPageView } from './components/FbPageView';
 
 export const metadata = {
-  title: 'Twoja Strona',
-  description: 'Opis meta dla Twojej strony',
-  openGraph: {
-    title: 'Twoja Strona',
-    description: 'Opis OG',
-    url: 'https://twojastrona.pl',
-    siteName: 'Twoja Strona',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
-    type: 'website',
-  },
-  robots: { index: true, follow: true },
-  other: { 'theme-color': '#ffffff' },
+  title: 'Twoja strona',
+  description: 'Opis strony',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pl">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <I18nProvider>
           {children}
           <CookieBanner />
-          <Analytics />
-          <FacebookPixel />
+          <Analytics />      {/* ✅ GA tylko po zgodzie */}
+          <FbPageView />     {/* ✅ Meta CAPI PageView – server-side */}
         </I18nProvider>
       </body>
     </html>
