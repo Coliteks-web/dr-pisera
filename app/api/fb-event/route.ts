@@ -1,43 +1,49 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
-export async function POST(req: Request) {
+export async function POST(req: NextRequest) {
   try {
-    const { eventName } = await req.json();
+    const body = await req.json();
+    const eventName = body.eventName;
+
     if (!eventName) {
       return NextResponse.json({ error: 'Missing eventName' }, { status: 400 });
     }
 
     const pixelId = process.env.NEXT_PUBLIC_FB_PIXEL_ID;
-    const token = process.env.FB_TOKEN; // ✅ Zmienna środowiskowa z Vercel
+    const accessToken = process.env.FB_TOKEN;
 
-    if (!pixelId || !token) {
-      return NextResponse.json({ error: 'Missing pixelId or token' }, { status: 500 });
+    if (!pixelId || !accessToken) {
+      return NextResponse.json({ error: 'Missing Pixel ID or Access Token' }, { status: 500 });
     }
 
-    const payload = {
-      event_name: eventName,
-      event_time: Math.floor(Date.now() / 1000),
-      action_source: 'website',
-      event_source_url: req.headers.get('referer') || '',
-      user_data: {}, // Możesz dodać hashed email, phone, itp.
-    };
+    const res = await fetch(`https://graph.facebook.com/v18.0/${pixelId}/events`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        data: [
+          {
+            event_name: eventName,
+            event_time: Math.floor(Date.now() / 1000),
+            action_source: 'website',
+          },
+        ],
+        access_token: accessToken,
+      }),
+    });
 
-    const response = await fetch(
-      `https://graph.facebook.com/v19.0/${pixelId}/events?access_token=${token}`,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ data: [payload] }),
-      }
-    );
+    const json = await res.json();
 
-    const fbRes = await response.json();
-    if (!response.ok) {
-      return NextResponse.json(fbRes, { status: response.status });
+    if (!res.ok) {
+      console.error('Meta API Error:', json);
+      return NextResponse.json({ error: json }, { status: 500 });
     }
 
     return NextResponse.json({ success: true });
-  } catch (error: any) {
-    return NextResponse.json({ error: error.message || 'Unknown error' }, { status: 500 });
+  } catch (error: unknown) {
+    const err = error as Error;
+    console.error('Unexpected Error:', err);
+    return NextResponse.json({ error: err.message }, { status: 500 });
   }
 }
