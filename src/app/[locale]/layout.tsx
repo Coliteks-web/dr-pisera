@@ -1,25 +1,30 @@
 import Navbar from '@/components/navigation/Navbar';
 import { getDictionary } from '@/i18n/getDictionary';
-import type { Locale } from '@/i18n';
-
-type Props = {
-  children: React.ReactNode;
-  params: Promise<{
-    locale: Locale;
-  }>;
-};
+import { notFound } from 'next/navigation';
+import { locales, type Locale } from '@/i18n/config';
 
 export default async function LocaleLayout({
   children,
   params,
-}: Props) {
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
   const { locale } = await params;
 
-  const dict = await getDictionary(locale);
+  if (!locales.includes(locale as Locale)) {
+    notFound();
+  }
+
+  const typedLocale = locale as Locale;
+  const dict = await getDictionary(typedLocale);
 
   return (
     <>
-      <Navbar dict={dict} locale={locale} />
+      <Navbar
+        dict={dict}
+        locale={typedLocale}
+      />
       <main>{children}</main>
     </>
   );
