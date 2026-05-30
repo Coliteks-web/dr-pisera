@@ -1,18 +1,33 @@
 'use client';
 
-import { createContext, useContext, useEffect, useState } from 'react';
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  ReactNode,
+} from 'react';
 
 type Consent = 'pending' | 'granted' | 'denied';
 
-const Ctx = createContext<any>(null);
+type CookieConsentContextType = {
+  consent: Consent;
+  setConsent: (value: Consent) => void;
+};
 
-export function CookieConsentProvider({ children }: any) {
+const Ctx = createContext<CookieConsentContextType | undefined>(undefined);
+
+type ProviderProps = {
+  children: ReactNode;
+};
+
+export function CookieConsentProvider({ children }: ProviderProps) {
   const [mounted, setMounted] = useState(false);
   const [consent, setConsent] = useState<Consent>('pending');
 
   useEffect(() => {
     setMounted(true);
-    const saved = localStorage.getItem('cookie_consent') as Consent;
+    const saved = localStorage.getItem('cookie_consent') as Consent | null;
     if (saved) setConsent(saved);
   }, []);
 
@@ -37,4 +52,12 @@ export function CookieConsentProvider({ children }: any) {
   );
 }
 
-export const useCookieConsent = () => useContext(Ctx);
+export function useCookieConsent() {
+  const ctx = useContext(Ctx);
+
+  if (!ctx) {
+    throw new Error('useCookieConsent must be used within CookieConsentProvider');
+  }
+
+  return ctx;
+}

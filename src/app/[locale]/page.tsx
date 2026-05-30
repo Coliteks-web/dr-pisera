@@ -8,7 +8,7 @@ export default async function Page({
 }) {
   const { locale } = await params;
 
-  const dict = await getDictionary(locale);
+  //const dict = await getDictionary(locale);
 
   return <main>{/* sections */}</main>;
 }

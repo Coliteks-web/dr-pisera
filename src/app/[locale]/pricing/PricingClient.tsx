@@ -1,17 +1,46 @@
 'use client';
 
 import { useState } from 'react';
-// import { trackPriceReveal } from '@/lib/analytics-events';
 
-export default function PricingClient({
-  dict,
-  locale
-}: any) {
+type PricingItem = {
+  name: string;
+  price: string;
+};
+
+type PricingGroup = {
+  title: string;
+  items?: PricingItem[];
+};
+
+type PricingDict = {
+  title: string;
+  showPrice: string;
+  consultation: PricingItem;
+  face: {
+    title: string;
+    [key: string]: any;
+  };
+  breast: {
+    title: string;
+    items: PricingItem[];
+  };
+  body: {
+    title: string;
+    items: PricingItem[];
+  };
+};
+
+type Props = {
+  dict: {
+    pricing: PricingDict;
+  };
+};
+
+export default function PricingClient({ dict }: Props) {
   const [opened, setOpened] = useState<Record<string, boolean>>({});
 
   const pricing = dict?.pricing;
 
-  // 🔒 HARD SAFETY (must-have)
   if (
     !pricing ||
     !pricing.consultation ||
@@ -27,13 +56,12 @@ export default function PricingClient({
       const isOpening = !prev[key];
 
       if (isOpening) {
-        // trackPriceReveal(name);
         console.log('PRICE REVEAL:', name);
       }
 
       return {
         ...prev,
-        [key]: isOpening
+        [key]: isOpening,
       };
     });
   };
@@ -44,25 +72,25 @@ export default function PricingClient({
         {pricing.title}
       </h1>
 
-      {/* ===================== CONSULTATION ===================== */}
+      {/* CONSULTATION */}
       <section className="mb-12">
         <div className="flex justify-between border-b py-4">
-            <span>{pricing.consultation.title}</span>
+          <span>{pricing.consultation.title}</span>
 
-            <button
+          <button
             onClick={() =>
-                togglePrice('consultation', pricing.consultation.title)
+              togglePrice('consultation', pricing.consultation.title)
             }
             className="text-sm text-blue-600 hover:underline"
-            >
+          >
             {opened['consultation']
-                ? pricing.consultation.price
-                : pricing.showPrice}
-            </button>
+              ? pricing.consultation.price
+              : pricing.showPrice}
+          </button>
         </div>
-        </section>
+      </section>
 
-      {/* ===================== FACE ===================== */}
+      {/* FACE */}
       <section className="mb-12">
         <h2 className="text-xl font-medium mb-6">
           {pricing.face.title}
@@ -77,7 +105,7 @@ export default function PricingClient({
               </h3>
 
               <div className="space-y-3">
-                {(group.items ?? []).map((item: any, idx: number) => {
+                {(group.items ?? []).map((item: PricingItem, idx: number) => {
                   const key = `face-${groupKey}-${idx}`;
 
                   return (
@@ -105,14 +133,14 @@ export default function PricingClient({
           ))}
       </section>
 
-      {/* ===================== BREAST ===================== */}
+      {/* BREAST */}
       <section className="mb-12">
         <h2 className="text-xl font-medium mb-6">
           {pricing.breast.title}
         </h2>
 
         <div className="space-y-3">
-          {(pricing.breast.items ?? []).map((item: any, idx: number) => {
+          {pricing.breast.items.map((item: PricingItem, idx: number) => {
             const key = `breast-${idx}`;
 
             return (
@@ -138,14 +166,14 @@ export default function PricingClient({
         </div>
       </section>
 
-      {/* ===================== BODY ===================== */}
+      {/* BODY */}
       <section>
         <h2 className="text-xl font-medium mb-6">
           {pricing.body.title}
         </h2>
 
         <div className="space-y-3">
-          {(pricing.body.items ?? []).map((item: any, idx: number) => {
+          {pricing.body.items.map((item: PricingItem, idx: number) => {
             const key = `body-${idx}`;
 
             return (
