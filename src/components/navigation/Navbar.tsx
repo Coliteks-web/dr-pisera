@@ -3,14 +3,19 @@ import DesktopMenu from './DesktopMenu';
 import MobileMenu from './MobileMenu';
 import LanguageSwitcher from './LanguageSwitcher';
 
+import type { Dictionary } from '@/types/dictionary';
+type NavbarProps = {
+  locale: string;
+  dict: Dictionary;
+};
+
 export default function Navbar({
   dict,
   locale,
-}: any) {
+}: NavbarProps) {
   return (
     <header className="sticky top-0 z-50 border-b border-white/20 bg-white/70 backdrop-blur-2xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-        
         <Logo />
 
         <DesktopMenu

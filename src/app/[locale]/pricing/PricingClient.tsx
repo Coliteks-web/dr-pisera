@@ -7,7 +7,7 @@ type PricingItem = {
   price: string;
 };
 
-type PricingGroup = {
+type PricingGroupItem = {
   title: string;
   items?: PricingItem[];
 };
@@ -18,7 +18,7 @@ type PricingDict = {
   consultation: PricingItem;
   face: {
     title: string;
-    [key: string]: any;
+    [groupKey: string]: PricingGroupItem | string;
   };
   breast: {
     title: string;
@@ -41,13 +41,7 @@ export default function PricingClient({ dict }: Props) {
 
   const pricing = dict?.pricing;
 
-  if (
-    !pricing ||
-    !pricing.consultation ||
-    !pricing.face ||
-    !pricing.breast ||
-    !pricing.body
-  ) {
+  if (!pricing?.consultation || !pricing?.face || !pricing?.breast || !pricing?.body) {
     return <div className="p-6">Pricing data missing</div>;
   }
 
@@ -68,9 +62,7 @@ export default function PricingClient({ dict }: Props) {
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-16">
-      <h1 className="text-3xl font-semibold mb-10">
-        {pricing.title}
-      </h1>
+      <h1 className="text-3xl font-semibold mb-10">{pricing.title}</h1>
 
       {/* CONSULTATION */}
       <section className="mb-12">
@@ -78,9 +70,7 @@ export default function PricingClient({ dict }: Props) {
           <span>{pricing.consultation.name}</span>
 
           <button
-            onClick={() =>
-              togglePrice('consultation', pricing.consultation.name)
-            }
+            onClick={() => togglePrice('consultation', pricing.consultation.name)}
             className="text-sm text-blue-600 hover:underline"
           >
             {opened['consultation']
@@ -92,73 +82,57 @@ export default function PricingClient({ dict }: Props) {
 
       {/* FACE */}
       <section className="mb-12">
-        <h2 className="text-xl font-medium mb-6">
-          {pricing.face.title}
-        </h2>
+        <h2 className="text-xl font-medium mb-6">{pricing.face.title}</h2>
 
         {Object.entries(pricing.face)
           .filter(([key]) => key !== 'title')
-          .map(([groupKey, group]: any) => (
-            <div key={groupKey} className="mb-10">
-              <h3 className="font-semibold mb-4">
-                {group.title}
-              </h3>
+          .map(([groupKey, group]) => {
+            const typedGroup = group as PricingGroupItem;
 
-              <div className="space-y-3">
-                {(group.items ?? []).map((item: PricingItem, idx: number) => {
-                  const key = `face-${groupKey}-${idx}`;
+            return (
+              <div key={groupKey} className="mb-10">
+                <h3 className="font-semibold mb-4">{typedGroup.title}</h3>
 
-                  return (
-                    <div
-                      key={key}
-                      className="flex justify-between border-b py-3"
-                    >
-                      <span>{item.name}</span>
+                <div className="space-y-3">
+                  {(typedGroup.items ?? []).map((item: PricingItem, idx: number) => {
+                    const key = `face-${groupKey}-${idx}`;
 
-                      <button
-                        onClick={() =>
-                          togglePrice(key, item.name)
-                        }
-                        className="text-sm text-blue-600 hover:underline"
-                      >
-                        {opened[key]
-                          ? item.price
-                          : pricing.showPrice}
-                      </button>
-                    </div>
-                  );
-                })}
+                    return (
+                      <div key={key} className="flex justify-between border-b py-3">
+                        <span>{item.name}</span>
+
+                        <button
+                          onClick={() => togglePrice(key, item.name)}
+                          className="text-sm text-blue-600 hover:underline"
+                        >
+                          {opened[key] ? item.price : pricing.showPrice}
+                        </button>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
       </section>
 
       {/* BREAST */}
       <section className="mb-12">
-        <h2 className="text-xl font-medium mb-6">
-          {pricing.breast.title}
-        </h2>
+        <h2 className="text-xl font-medium mb-6">{pricing.breast.title}</h2>
 
         <div className="space-y-3">
           {pricing.breast.items.map((item: PricingItem, idx: number) => {
             const key = `breast-${idx}`;
 
             return (
-              <div
-                key={key}
-                className="flex justify-between border-b py-3"
-              >
+              <div key={key} className="flex justify-between border-b py-3">
                 <span>{item.name}</span>
 
                 <button
-                  onClick={() =>
-                    togglePrice(key, item.name)
-                  }
+                  onClick={() => togglePrice(key, item.name)}
                   className="text-sm text-blue-600 hover:underline"
                 >
-                  {opened[key]
-                    ? item.price
-                    : pricing.showPrice}
+                  {opened[key] ? item.price : pricing.showPrice}
                 </button>
               </div>
             );
@@ -168,30 +142,21 @@ export default function PricingClient({ dict }: Props) {
 
       {/* BODY */}
       <section>
-        <h2 className="text-xl font-medium mb-6">
-          {pricing.body.title}
-        </h2>
+        <h2 className="text-xl font-medium mb-6">{pricing.body.title}</h2>
 
         <div className="space-y-3">
           {pricing.body.items.map((item: PricingItem, idx: number) => {
             const key = `body-${idx}`;
 
             return (
-              <div
-                key={key}
-                className="flex justify-between border-b py-3"
-              >
+              <div key={key} className="flex justify-between border-b py-3">
                 <span>{item.name}</span>
 
                 <button
-                  onClick={() =>
-                    togglePrice(key, item.name)
-                  }
+                  onClick={() => togglePrice(key, item.name)}
                   className="text-sm text-blue-600 hover:underline"
                 >
-                  {opened[key]
-                    ? item.price
-                    : pricing.showPrice}
+                  {opened[key] ? item.price : pricing.showPrice}
                 </button>
               </div>
             );

@@ -1,13 +1,18 @@
 import MegaLink from './MegaLink';
 
-export default function MegaMenu({
-  locale,
-  t,
-}: any) {
+type MegaMenuProps = {
+  locale: string;
+  t: {
+    face: string;
+    upperEyelids: string;
+    lowerEyelids: string;
+  };
+};
+
+export default function MegaMenu({ locale, t }: MegaMenuProps) {
   return (
     <div className="absolute left-1/2 top-full mt-6 w-[900px] -translate-x-1/2 rounded-3xl border border-neutral-200 bg-white p-8 shadow-2xl">
       <div className="grid grid-cols-3 gap-10">
-
         <div>
           <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-neutral-400">
             {t.face}
@@ -25,7 +30,6 @@ export default function MegaMenu({
             />
           </div>
         </div>
-
       </div>
     </div>
   );

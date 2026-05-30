@@ -8,7 +8,7 @@ type EventName =
 type EventPayload = {
   event: EventName;
   eventId?: string;
-  data?: Record<string, any>;
+  data?: Record<string, unknown>;
 };
 
 export async function trackEvent(payload: EventPayload) {
@@ -23,7 +23,7 @@ export async function trackEvent(payload: EventPayload) {
     },
     body: JSON.stringify({
       ...payload,
-      eventId: payload.eventId || crypto.randomUUID(),
+      eventId: payload.eventId ?? crypto.randomUUID(),
       url: window.location.href,
       timestamp: Date.now(),
     }),

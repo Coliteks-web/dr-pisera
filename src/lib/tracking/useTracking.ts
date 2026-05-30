@@ -1,24 +1,17 @@
-'use client';
+export type EventName =
+  | 'page_view'
+  | 'lead'
+  | 'purchase'
+  | 'contact'
+  | 'custom';
 
-import { useEffect } from 'react';
-import { trackEvent } from './trackEvent';
+export type EventData = Record<
+  string,
+  string | number | boolean | null
+>;
 
-export function useTracking() {
-  useEffect(() => {
-    const consent = localStorage.getItem('cookie_consent');
-    if (consent !== 'granted') return;
-
-    trackEvent({
-      event: 'page_view',
-    });
-  }, []);
-
-  const track = (event: string, data?: any) => {
-    trackEvent({
-      event: event as any,
-      data,
-    });
-  };
-
-  return { track };
-}
+export type EventPayload = {
+  event: EventName;
+  eventId?: string;
+  data?: EventData;
+};

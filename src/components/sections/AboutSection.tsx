@@ -1,22 +1,45 @@
 'use client';
 
+type AboutDict = {
+  about: {
+    title: string;
+    paragraphs: string[];
+    highlight: string;
+    cards: {
+      specialization: {
+        title: string;
+        value: string;
+        subtitle: string;
+      };
+      experience: {
+        title: string;
+        value: string;
+        subtitle: string;
+      };
+      position: {
+        title: string;
+        value: string;
+        subtitle: string;
+      };
+    };
+  };
+};
+
 type Props = {
-  dict: any;
+  dict: AboutDict;
 };
 
 export default function AboutSection({ dict }: Props) {
   return (
     <section className="pt-28 pb-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-14">
-
         {/* LEFT CONTENT */}
         <div className="lg:col-span-2 space-y-6 text-neutral-700 leading-relaxed">
-
           <h1 className="text-3xl font-semibold text-black">
             {dict.about.title}
           </h1>
 
-          {dict.about.paragraphs.map((text: string, i: number) => (
+          {dict.about.paragraphs.map((text, i) => (
             <p key={i}>{text}</p>
           ))}
 
@@ -28,7 +51,6 @@ export default function AboutSection({ dict }: Props) {
         {/* RIGHT SIDEBAR */}
         <div className="lg:col-span-1">
           <div className="sticky top-28 space-y-6">
-
             <Card
               title={dict.about.cards.specialization.title}
               value={dict.about.cards.specialization.value}
@@ -46,16 +68,12 @@ export default function AboutSection({ dict }: Props) {
               value={dict.about.cards.position.value}
               subtitle={dict.about.cards.position.subtitle}
             />
-
           </div>
         </div>
-
       </div>
     </section>
   );
 }
-
-/* ---------------- CARD COMPONENT ---------------- */
 
 function Card({
   title,
