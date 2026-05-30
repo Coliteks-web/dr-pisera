@@ -4,9 +4,32 @@ import Link from 'next/link';
 import { useRef, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
-export default function DesktopMenu({ dict, locale }: any) {
+type ProceduresMenuItem = {
+  title: string;
+  items: string[];
+};
+
+type NavbarDict = {
+  about: string;
+  procedures: string;
+  pricing: string;
+  clinics: string;
+  contact: string;
+
+  labels?: Record<string, string>; // 👈 optional safety fix
+  proceduresMenu: Record<string, ProceduresMenuItem>;
+};
+
+type Props = {
+  dict: {
+    navbar: NavbarDict;
+  };
+  locale: string;
+};
+
+export default function DesktopMenu({ dict, locale }: Props) {
   const [open, setOpen] = useState(false);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const openMenu = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -55,7 +78,6 @@ export default function DesktopMenu({ dict, locale }: any) {
             rounded-3xl border border-white/20
             bg-white/90 backdrop-blur-2xl p-10
             shadow-2xl
-
             transition-all duration-200
 
             ${
@@ -65,26 +87,35 @@ export default function DesktopMenu({ dict, locale }: any) {
             }
           `}
         >
-          {Object.entries(menu).map(([key, section]: any) => (
-            <div key={key}>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-neutral-400">
-                {section.title}
-              </h3>
+          {Object.entries(menu).map(([key, section]) => {
+            const group = section as ProceduresMenuItem;
 
-              <div className="space-y-3">
-                {section.items.map((itemKey: string) => (
-                  <Link
-                    key={itemKey}
-                    href={`/${locale}/procedures/${itemKey}`}
-                    className="block text-sm transition hover:translate-x-1"
-                    onClick={() => setOpen(false)}
-                  >
-                    {dict.navbar[itemKey]}
-                  </Link>
-                ))}
+            return (
+              <div key={key}>
+                <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-neutral-400">
+                  {group.title}
+                </h3>
+
+                <div className="space-y-3">
+                  {group.items.map((itemKey) => {
+                    const label =
+                      dict.navbar.labels?.[itemKey] ?? itemKey;
+
+                    return (
+                      <Link
+                        key={itemKey}
+                        href={`/${locale}/procedures/${itemKey}`}
+                        className="block text-sm transition hover:translate-x-1"
+                        onClick={() => setOpen(false)}
+                      >
+                        {label}
+                      </Link>
+                    );
+                  })}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 

@@ -75,11 +75,11 @@ export default function PricingClient({ dict }: Props) {
       {/* CONSULTATION */}
       <section className="mb-12">
         <div className="flex justify-between border-b py-4">
-          <span>{pricing.consultation.title}</span>
+          <span>{pricing.consultation.name}</span>
 
           <button
             onClick={() =>
-              togglePrice('consultation', pricing.consultation.title)
+              togglePrice('consultation', pricing.consultation.name)
             }
             className="text-sm text-blue-600 hover:underline"
           >
