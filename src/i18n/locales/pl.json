@@ -1,0 +1,237 @@
+{
+  "navbar": {
+    "about": "O mnie",
+    "procedures": "Zabiegi",
+    "pricing": "Cennik",
+    "clinics": "Kliniki",
+    "contact": "Kontakt",
+    "consultation": "Umów konsultację",
+
+    "face": "Twarz",
+    "breast": "Piersi",
+    "body": "Sylwetka",
+
+    "eyelids": "Plastyka powiek",
+    "nose": "Plastyka nosa",
+    "facelift": "Lifting twarzy i szyi (SMAS)",
+    "temporalLift": "Lifting skroniowy",
+    "browLift": "Lifting brwi",
+    "ears": "Plastyka uszu",
+    "liplift": "Lip lift",
+
+    "augmentation": "Powiększenie piersi implantami",
+    "breastlift": "Lifting (podniesienie) piersi",
+    "breastliftAugmentation": "Lifting piersi z powiększeniem implantami",
+    "reduction": "Zmniejszenie i podniesienie piersi",
+    "implants": "Wymiana implantów piersi",
+    "nipples": "Plastyka wciągniętych brodawek sutkowych",
+
+    "abdominoplasty": "Plastyka powłok brzucha (abdominoplastyka)",
+    "gynecomastia": "Ginekomastia",
+    "scars": "Plastyka blizn pourazowych i pooperacyjnych",
+
+    "proceduresMenu": {
+      "face": {
+        "title": "Chirurgia plastyczna twarzy",
+        "items": [
+          "eyelids",
+          "nose",
+          "facelift",
+          "temporalLift",
+          "browLift",
+          "ears",
+          "liplift"
+        ]
+      },
+      "breast": {
+        "title": "Chirurgia plastyczna piersi",
+        "items": [
+          "augmentation",
+          "breastlift",
+          "breastliftAugmentation",
+          "reduction",
+          "implants",
+          "nipples"
+        ]
+      },
+      "body": {
+        "title": "Chirurgia plastyczna sylwetki",
+        "items": [
+          "abdominoplasty",
+          "gynecomastia",
+          "scars"
+        ]
+      }
+    }
+  },
+
+  "about": {
+    "title": "O mnie",
+    "paragraphs": [
+      "Jestem absolwentem Wydziału Lekarskiego Akademii Medycznej w Łodzi. Posiadam I stopień specjalizacji z chirurgii ogólnej oraz tytuł specjalisty w zakresie chirurgii plastycznej.",
+      "Od 1994 roku jestem związany z Oddziałem Klinicznym Chirurgii Plastycznej, Rekonstrukcyjnej i Estetycznej USK nr 1 w Łodzi.",
+      "Posiadam ponad 30-letnie doświadczenie obejmujące pełen zakres chirurgii plastycznej i rekonstrukcyjnej.",
+      "Stopień doktora nauk medycznych uzyskałem na podstawie pracy dotyczącej chirurgii nosa.",
+      "Jestem autorem publikacji naukowych oraz członkiem Polskiego Towarzystwa Chirurgii Plastycznej."
+    ],
+    "highlight": "Chirurgia plastyczna jest dla mnie nie tylko zawodem, ale również pasją i misją.",
+
+    "cards": {
+      "specialization": {
+        "title": "Specjalizacja",
+        "value": "Chirurgia plastyczna",
+        "subtitle": "Rekonstrukcyjna i estetyczna"
+      },
+      "experience": {
+        "title": "Doświadczenie",
+        "value": "30+ lat",
+        "subtitle": "praktyki klinicznej"
+      },
+      "position": {
+        "title": "Stanowisko",
+        "value": "Zastępca ordynatora",
+        "subtitle": "USK nr 1 w Łodzi"
+      }
+    }
+  },
+  "pricing": {
+    "title": "Cennik",
+    "showPrice": "Sprawdź cenę",
+    "consultation": {
+      "title": "Konsultacja",
+      "price": "400 zł"
+    },
+
+    "face": {
+      "title": "Chirurgia plastyczna twarzy",
+
+      "nose": {
+        "title": "Nos",
+        "items": [
+          {
+            "name": "Całkowita plastyka nosa",
+            "price": "25000 - 28000 zł"
+          },
+          {
+            "name": "Korekcja części chrzęstnej",
+            "price": "16000 - 18000 zł"
+          },
+          {
+            "name": "Plastyka przegrody nosa",
+            "price": "9000 - 10000 zł"
+          },
+          {
+            "name": "Zwężenie rozstawienia skrzydełek nosa",
+            "price": "7500 zł"
+          },
+          {
+            "name": "Wtórna plastyka nosa",
+            "price": "26000 - 30000 zł"
+          }
+        ]
+      },
+
+      "eyes": {
+        "title": "Powieki",
+        "items": [
+          {
+            "name": "Plastyka powiek górnych",
+            "price": "7000 - 7500 zł"
+          },
+          {
+            "name": "Plastyka powiek dolnych",
+            "price": "8000 - 9000 zł"
+          },
+          {
+            "name": "Opadanie powiek (ptoza)",
+            "price": "10000 zł"
+          }
+        ]
+      },
+
+      "lifting": {
+        "title": "Lifting twarzy",
+        "items": [
+          {
+            "name": "Lifting twarzy i szyi",
+            "price": "28000 zł"
+          },
+          {
+            "name": "Lifting skroniowy",
+            "price": "16000 zł"
+          },
+          {
+            "name": "Lifting brwi",
+            "price": "9000 zł"
+          }
+        ]
+      },
+
+      "other": {
+        "title": "Pozostałe",
+        "items": [
+          {
+            "name": "Lip lift",
+            "price": "8000 zł"
+          },
+          {
+            "name": "Plastyka odstających uszu",
+            "price": "9000 zł"
+          },
+          {
+            "name": "Plastyka rozerwanych płatków uszu",
+            "price": "3000 zł"
+          }
+        ]
+      }
+    },
+
+    "breast": {
+      "title": "Chirurgia plastyczna piersi",
+      "items": [
+        {
+          "name": "Powiększenie piersi implantami",
+          "price": "24000 - 26000 zł"
+        },
+        {
+          "name": "Lifting piersi (mastopeksja)",
+          "price": "17000 - 20000 zł"
+        },
+        {
+          "name": "Lifting piersi z powiększeniem implantami",
+          "price": "33000 - 35000 zł"
+        },
+        {
+          "name": "Zmniejszenie z podniesieniem piersi",
+          "price": "25000 - 26000 zł"
+        },
+        {
+          "name": "Wymiana implantów piersi",
+          "price": "od 25000 zł"
+        },
+        {
+          "name": "Plastyka wciągniętych brodawek sutkowych",
+          "price": "6000 zł"
+        }
+      ]
+    },
+
+    "body": {
+      "title": "Chirurgia plastyczna sylwetki",
+      "items": [
+        {
+          "name": "Plastyka powłok brzucha (abdominoplastyka)",
+          "price": "24000 - 26000 zł"
+        },
+        {
+          "name": "Ginekomastia",
+          "price": "12000 - 16000 zł"
+        },
+        {
+          "name": "Plastyka blizn pourazowych i pooperacyjnych",
+          "price": "od 4000 zł"
+        }
+      ]
+    }
+  }
+}

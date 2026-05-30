@@ -1,0 +1,237 @@
+{
+  "navbar": {
+    "about": "About me",
+    "procedures": "Procedures",
+    "pricing": "Pricing",
+    "clinics": "Clinics",
+    "contact": "Contact",
+    "consultation": "Book consultation",
+
+    "face": "Face",
+    "breast": "Breast",
+    "body": "Body",
+
+    "eyelids": "Eyelid surgery",
+    "nose": "Rhinoplasty",
+    "facelift": "Facelift and neck lift (SMAS)",
+    "temporalLift": "Temple lift",
+    "browLift": "Brow lift",
+    "ears": "Otoplasty",
+    "liplift": "Lip lift",
+
+    "augmentation": "Breast augmentation with implants",
+    "breastlift": "Breast lift (mastopexy)",
+    "breastliftAugmentation": "Breast lift with implants",
+    "reduction": "Breast reduction and lift",
+    "implants": "Breast implant replacement",
+    "nipples": "Inverted nipple correction",
+
+    "abdominoplasty": "Abdominoplasty (tummy tuck)",
+    "gynecomastia": "Gynecomastia surgery",
+    "scars": "Scar revision surgery",
+
+    "proceduresMenu": {
+      "face": {
+        "title": "Facial plastic surgery",
+        "items": [
+          "eyelids",
+          "nose",
+          "facelift",
+          "temporalLift",
+          "browLift",
+          "ears",
+          "liplift"
+        ]
+      },
+      "breast": {
+        "title": "Breast plastic surgery",
+        "items": [
+          "augmentation",
+          "breastlift",
+          "breastliftAugmentation",
+          "reduction",
+          "implants",
+          "nipples"
+        ]
+      },
+      "body": {
+        "title": "Body contouring surgery",
+        "items": [
+          "abdominoplasty",
+          "gynecomastia",
+          "scars"
+        ]
+      }
+    }
+  },
+
+  "about": {
+    "title": "About me",
+    "paragraphs": [
+      "I am a graduate of the Medical Faculty of the Medical University of Łódź. I hold a first-degree specialization in general surgery and a specialist title in plastic surgery.",
+      "Since 1994 I have been working at the Clinical Department of Plastic, Reconstructive and Aesthetic Surgery, University Hospital No. 1 in Łódź.",
+      "I have over 30 years of experience covering the full scope of plastic and reconstructive surgery.",
+      "I obtained a PhD in medical sciences based on research in nasal surgery.",
+      "I am the author of scientific publications and a member of the Polish Society of Plastic Surgery."
+    ],
+    "highlight": "Plastic surgery is not only my profession, but also my passion and mission.",
+
+    "cards": {
+      "specialization": {
+        "title": "Specialization",
+        "value": "Plastic surgery",
+        "subtitle": "Reconstructive & aesthetic"
+      },
+      "experience": {
+        "title": "Experience",
+        "value": "30+ years",
+        "subtitle": "of clinical practice"
+      },
+      "position": {
+        "title": "Position",
+        "value": "Deputy Head of Department",
+        "subtitle": "University Hospital No. 1 in Łódź"
+      }
+    }
+  },
+  "pricing": {
+  "title": "Price List",
+  "showPrice": "Reveal price",
+  "consultation": {
+    "title": "Consultation",
+    "price": "400 PLN"
+  },
+
+  "face": {
+    "title": "Facial Plastic Surgery",
+
+    "nose": {
+      "title": "Nose",
+      "items": [
+        {
+          "name": "Total rhinoplasty",
+          "price": "25000 - 28000 PLN"
+        },
+        {
+          "name": "Cartilage correction",
+          "price": "16000 - 18000 PLN"
+        },
+        {
+          "name": "Nasal septum surgery",
+          "price": "9000 - 10000 PLN"
+        },
+        {
+          "name": "Nasal wing narrowing",
+          "price": "7500 PLN"
+        },
+        {
+          "name": "Revision rhinoplasty",
+          "price": "26000 - 30000 PLN"
+        }
+      ]
+    },
+
+    "eyes": {
+      "title": "Eyelids",
+      "items": [
+        {
+          "name": "Upper eyelid blepharoplasty",
+          "price": "7000 - 7500 PLN"
+        },
+        {
+          "name": "Lower eyelid blepharoplasty",
+          "price": "8000 - 9000 PLN"
+        },
+        {
+          "name": "Ptosis correction",
+          "price": "10000 PLN"
+        }
+      ]
+    },
+
+    "lifting": {
+      "title": "Facelift",
+      "items": [
+        {
+          "name": "Facelift and neck lift",
+          "price": "28000 PLN"
+        },
+        {
+          "name": "Temporal lift",
+          "price": "16000 PLN"
+        },
+        {
+          "name": "Brow lift",
+          "price": "9000 PLN"
+        }
+      ]
+    },
+
+    "other": {
+      "title": "Other",
+      "items": [
+        {
+          "name": "Lip lift",
+          "price": "8000 PLN"
+        },
+        {
+          "name": "Otoplasty (ear correction)",
+          "price": "9000 PLN"
+        },
+        {
+          "name": "Earlobe repair",
+          "price": "3000 PLN"
+        }
+      ]
+    }
+  },
+
+  "breast": {
+    "title": "Breast Surgery",
+    "items": [
+      {
+        "name": "Breast augmentation with implants",
+        "price": "24000 - 26000 PLN"
+      },
+      {
+        "name": "Breast lift (mastopexy)",
+        "price": "17000 - 20000 PLN"
+      },
+      {
+        "name": "Breast lift with implants",
+        "price": "33000 - 35000 PLN"
+      },
+      {
+        "name": "Breast reduction with lift",
+        "price": "25000 - 26000 PLN"
+      },
+      {
+        "name": "Implant replacement",
+        "price": "from 25000 PLN"
+      },
+      {
+        "name": "Inverted nipple correction",
+        "price": "6000 PLN"
+      }
+    ]
+  },
+
+  "body": {
+    "title": "Body Contouring Surgery",
+    "items": [
+      {
+        "name": "Abdominoplasty (tummy tuck)",
+        "price": "24000 - 26000 PLN"
+      },
+      {
+        "name": "Gynecomastia surgery",
+        "price": "12000 - 16000 PLN"
+      },
+      {
+        "name": "Scar revision surgery",
+        "price": "from 4000 PLN"
+      }
+    ]
+  }
+}
+}
