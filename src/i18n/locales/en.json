@@ -72,34 +72,44 @@
 },
 
   "about": {
-    "title": "About me",
-    "paragraphs": [
-      "I am a graduate of the Medical Faculty of the Medical University of Łódź. I hold a first-degree specialization in general surgery and a specialist title in plastic surgery.",
-      "Since 1994 I have been working at the Clinical Department of Plastic, Reconstructive and Aesthetic Surgery, University Hospital No. 1 in Łódź.",
-      "I have over 30 years of experience covering the full scope of plastic and reconstructive surgery.",
-      "I obtained a PhD in medical sciences based on research in nasal surgery.",
-      "I am the author of scientific publications and a member of the Polish Society of Plastic Surgery."
-    ],
-    "highlight": "Plastic surgery is not only my profession, but also my passion and mission.",
+  "title": "About me",
 
-    "cards": {
-      "specialization": {
-        "title": "Specialization",
-        "value": "Plastic surgery",
-        "subtitle": "Reconstructive & aesthetic"
-      },
-      "experience": {
-        "title": "Experience",
-        "value": "30+ years",
-        "subtitle": "of clinical practice"
-      },
-      "position": {
-        "title": "Position",
-        "value": "Deputy Head of Department",
-        "subtitle": "University Hospital No. 1 in Łódź"
-      }
+  "paragraphs": [
+    "My mission is to combine many years of clinical experience with modern plastic surgery techniques in order to ensure patient safety, natural results, and the highest standard of medical care.",
+
+    "I am a graduate of the Faculty of Medicine at the Medical University of Łódź. I hold the first-degree specialization in general surgery and the title of specialist in plastic surgery, obtained after passing the National Specialization Examination with excellent results.",
+
+    "Since 1994, I have been associated with the Clinical Department of Plastic, Reconstructive and Aesthetic Surgery at the University Teaching Hospital No. 1 in Łódź, where I have held the position of Deputy Head of Department for many years. In parallel, I consult and perform plastic surgery procedures in reputable private clinics.",
+
+    "I have over 30 years of experience in plastic and reconstructive surgery, covering the full spectrum of aesthetic and reconstructive procedures of the face, breast, and body. I have continuously developed my skills through numerous courses, trainings, and scientific conferences in Poland and abroad.",
+
+    "I hold a PhD in medical sciences, awarded on the basis of an outstanding doctoral dissertation entitled “Evaluation of long-term results of surgical treatment of congenital nasal deformities. Clinical and anthropometric studies.”",
+
+    "I am the author and co-author of scientific publications in national and international medical journals, and an active member of the Polish Society of Plastic, Reconstructive and Aesthetic Surgery, regularly participating in scientific congresses and conferences.",
+
+    "Plastic surgery is not only my profession but also a lifelong passion and responsibility towards my patients, allowing me to continuously improve my skills and maintain the highest standards of treatment."
+  ],
+
+  "highlight": "Over 30 years of experience in plastic, reconstructive, and aesthetic surgery – safety, precision, and natural results.",
+
+  "cards": {
+    "specialization": {
+      "title": "Specialization",
+      "value": "Plastic surgery",
+      "subtitle": "reconstructive & aesthetic"
+    },
+    "experience": {
+      "title": "Experience",
+      "value": "30+ years",
+      "subtitle": "of clinical practice"
+    },
+    "position": {
+      "title": "Position",
+      "value": "Deputy Head of Department",
+      "subtitle": "University Teaching Hospital No. 1, Łódź"
     }
-  },
+  }
+},
   "pricing": {
   "title": "Price List",
   "showPrice": "Reveal price",

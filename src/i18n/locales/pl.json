@@ -71,35 +71,45 @@
     }
   },
 
-  "about": {
-    "title": "O mnie",
-    "paragraphs": [
-      "Jestem absolwentem Wydziału Lekarskiego Akademii Medycznej w Łodzi. Posiadam I stopień specjalizacji z chirurgii ogólnej oraz tytuł specjalisty w zakresie chirurgii plastycznej.",
-      "Od 1994 roku jestem związany z Oddziałem Klinicznym Chirurgii Plastycznej, Rekonstrukcyjnej i Estetycznej USK nr 1 w Łodzi.",
-      "Posiadam ponad 30-letnie doświadczenie obejmujące pełen zakres chirurgii plastycznej i rekonstrukcyjnej.",
-      "Stopień doktora nauk medycznych uzyskałem na podstawie pracy dotyczącej chirurgii nosa.",
-      "Jestem autorem publikacji naukowych oraz członkiem Polskiego Towarzystwa Chirurgii Plastycznej."
-    ],
-    "highlight": "Chirurgia plastyczna jest dla mnie nie tylko zawodem, ale również pasją i misją.",
+"about": {
+  "title": "O mnie",
 
-    "cards": {
-      "specialization": {
-        "title": "Specjalizacja",
-        "value": "Chirurgia plastyczna",
-        "subtitle": "Rekonstrukcyjna i estetyczna"
-      },
-      "experience": {
-        "title": "Doświadczenie",
-        "value": "30+ lat",
-        "subtitle": "praktyki klinicznej"
-      },
-      "position": {
-        "title": "Stanowisko",
-        "value": "Zastępca ordynatora",
-        "subtitle": "USK nr 1 w Łodzi"
-      }
+  "paragraphs": [
+    "Moją misją jest łączenie wieloletniego doświadczenia klinicznego z nowoczesnymi technikami chirurgii plastycznej, aby zapewnić pacjentom bezpieczeństwo, naturalne efekty oraz najwyższy standard opieki medycznej.",
+
+    "Jestem absolwentem Wydziału Lekarskiego Akademii Medycznej w Łodzi. Posiadam I stopień specjalizacji z chirurgii ogólnej oraz tytuł specjalisty w zakresie chirurgii plastycznej, uzyskany po zdaniu Państwowego Egzaminu Specjalizacyjnego z wynikiem bardzo dobrym.",
+
+    "Od 1994 roku jestem związany z Oddziałem Klinicznym Chirurgii Plastycznej, Rekonstrukcyjnej i Estetycznej USK nr 1 w Łodzi, gdzie od wielu lat pełnię funkcję zastępcy ordynatora. Równolegle konsultuję oraz wykonuję zabiegi chirurgii plastycznej w renomowanych klinikach prywatnych.",
+
+    "Posiadam ponad 30-letnie doświadczenie w zakresie chirurgii plastycznej i rekonstrukcyjnej, obejmujące pełne spektrum zabiegów estetycznych i rekonstrukcyjnych twarzy, piersi oraz sylwetki. Swoje kompetencje rozwijałem poprzez liczne kursy, szkolenia i konferencje naukowe w Polsce i za granicą.",
+
+    "Posiadam stopień naukowy doktora nauk medycznych uzyskany na podstawie wyróżnionej rozprawy doktorskiej pt. „Ocena odległych wyników chirurgicznego leczenia wrodzonych zniekształceń nosa. Badania kliniczne i antropometryczne”.",
+
+    "Jestem autorem i współautorem publikacji naukowych w czasopismach krajowych i międzynarodowych oraz aktywnym członkiem Polskiego Towarzystwa Chirurgii Plastycznej, Rekonstrukcyjnej i Estetycznej, regularnie uczestniczącym w konferencjach i zjazdach naukowych.",
+
+    "Chirurgia plastyczna to dla mnie nie tylko zawód, ale również wieloletnia pasja i odpowiedzialność za pacjenta, która pozwala mi stale doskonalić umiejętności i utrzymywać najwyższe standardy leczenia."
+  ],
+
+  "highlight": "Ponad 30 lat doświadczenia w chirurgii plastycznej, rekonstrukcyjnej i estetycznej – bezpieczeństwo, precyzja i naturalne efekty.",
+
+  "cards": {
+    "specialization": {
+      "title": "Specjalizacja",
+      "value": "Chirurgia plastyczna",
+      "subtitle": "rekonstrukcyjna i estetyczna"
+    },
+    "experience": {
+      "title": "Doświadczenie",
+      "value": "30+ lat",
+      "subtitle": "praktyki klinicznej"
+    },
+    "position": {
+      "title": "Stanowisko",
+      "value": "Zastępca ordynatora",
+      "subtitle": "USK nr 1 w Łodzi"
     }
-  },
+  }
+},
   "pricing": {
     "title": "Cennik",
     "showPrice": "Sprawdź cenę",
@@ -525,10 +535,78 @@
   }
 }
   }
+},
+"body": {
+  "title": "Chirurgia plastyczna sylwetki",
+  "procedures": {
+    "abdominoplasty": {
+      "title": "Plastyka powłok brzucha (abdominoplastyka)",
+
+      "description": "Plastyka powłok brzucha czyli abdominoplastyka jest zabiegiem chirurgicznym mającym na celu poprawienie wyglądu brzucha poprzez usunięcie nadmiaru skóry i tkanki podskórnej z dolnej i środkowej jego części oraz w wybranych przypadkach wzmocnienie poprzez zszycie w linii pośrodkowej mięśni prostych brzucha. Typowym wskazaniem do wykonania tego zabiegu jest nadmiar luźnej skóry i tkanki podskórnej w postaci fałdu skórno-tłuszczowego po znacznej utracie wagi ciała lub rozciągnięcie powłok brzucha przez ciąże. Operacja nie jest metodą odchudzającą, lecz eliminującą efekt nadmiaru skóry po utracie masy ciała. Może być wykonywana w wariancie dużej lub małej abdominoplastyki w zależności od zakresu zabiegu. Zabieg wykonywany jest w znieczuleniu ogólnym i trwa około 2–3 godziny. W wybranych przypadkach stosuje się drenaż ssący. Pacjent pozostaje w klinice zwykle 1 dobę. Szwy z pępka usuwane są po około 14 dniach.",
+
+      "recommendations": {
+        "title": "Zalecenia dla pacjenta",
+        "items": [
+          "Noszenie pasa uciskowego przez 4–6 tygodni",
+          "Noszenie pończoch uciskowych przez 10 dni",
+          "Spanie z lekko zgiętymi kolanami przez 7–10 dni",
+          "Unikanie wysiłku fizycznego przez 3 miesiące",
+          "Zakaz palenia przez 4 tygodnie",
+          "Unikanie słońca i solarium przez 6 miesięcy"
+        ]
+      }
+    },
+
+    "gynecomastia": {
+      "title": "Ginekomastia",
+
+      "description": "Ginekomastia jest stanem polegającym na nadmiernym rozroście tkanki gruczołowej i/lub tłuszczowej piersi u mężczyzn. Może być spowodowana zaburzeniami hormonalnymi, stosowaniem niektórych leków, nadużywaniem alkoholu, chorobami metabolicznymi lub otyłością. Leczenie chirurgiczne polega na usunięciu nadmiaru tkanki gruczołowej i/lub tłuszczowej, często z użyciem liposukcji. W zaawansowanych przypadkach konieczne jest również usunięcie nadmiaru skóry. Zabieg wykonywany jest w znieczuleniu ogólnym i trwa około 60–120 minut. Cięcie najczęściej prowadzone jest w dolnym obwodzie otoczki brodawki. W wielu przypadkach stosuje się drenaż. Szwy usuwa się po około 12–14 dniach, a pacjent pozostaje w klinice zwykle 1 dobę.",
+
+      "recommendations": {
+        "title": "Zalecenia dla pacjenta",
+        "items": [
+          "Noszenie ubrania uciskowego przez 2–3 tygodnie",
+          "Unikanie moczenia ran do czasu zdjęcia szwów",
+          "Unikanie wysiłku fizycznego przez 6–8 tygodni",
+          "Unikanie słońca i solarium przez 8 tygodni",
+          "Ochrona blizn przed słońcem przez około 8 miesięcy",
+          "Pełna kąpiel po usunięciu szwów"
+        ]
+      }
+    },
+    "scar-correction": {
+  "title": "Plastyka blizn pourazowych i pooperacyjnych",
+
+  "description": "Plastyka blizn pourazowych i pooperacyjnych to zabieg chirurgiczny mający na celu poprawę wyglądu, elastyczności oraz funkcjonalności blizn powstałych w wyniku urazów, operacji lub oparzeń. Zabieg polega na chirurgicznym wycięciu blizny lub jej fragmentu, a następnie ponownym, estetycznym zeszyciu tkanek w sposób zmniejszający napięcie skóry i poprawiający końcowy efekt kosmetyczny. W wybranych przypadkach stosuje się również techniki plastyczne, takie jak Z-plastyka lub W-plastyka, które pozwalają zmienić przebieg blizny i zmniejszyć jej widoczność. Zabieg wykonywany jest w znieczuleniu miejscowym i trwa zazwyczaj od 30 do 90 minut, w zależności od rozległości blizny. Po operacji rana zostaje zszyta cienkimi szwami i zabezpieczona opatrunkiem. Szwy usuwa się zwykle po 7–14 dniach. W okresie gojenia mogą wystąpić niewielki obrzęk i zaczerwienienie, które stopniowo ustępują. Ostateczny efekt zależy od indywidualnych predyspozycji pacjenta oraz prawidłowej pielęgnacji blizny.",
+
+  "recommendations": {
+    "title": "Zalecenia dla pacjenta",
+    "items": [
+      "Unikanie wysiłku fizycznego przez 2–3 tygodnie",
+      "Nie moczyć rany do czasu zdjęcia szwów",
+      "Stosowanie opatrunków zgodnie z zaleceniami lekarza",
+      "Unikanie słońca i solarium przez 3–6 miesięcy",
+      "Stosowanie preparatów na blizny po zdjęciu szwów",
+      "Regularne kontrole lekarskie"
+    ]
+  }
+}
+  }
 }
 
 
 
 
-}}
+}},
+
+  "hero": {
+    "title": "Chirurgia plastyczna w standardzie premium",
+    "subtitle": "Precyzja, estetyka i bezpieczeństwo w nowoczesnej medycynie",
+    "description": "Nowoczesna chirurgia plastyczna łączy zaawansowaną technologię, wieloletnie doświadczenie i wyczucie estetyki. Każdy zabieg wykonywany jest z najwyższą dbałością o proporcje, naturalny efekt i komfort pacjenta.",
+    "descriptionSecondary": "Naszym celem jest subtelna poprawa wyglądu, która podkreśla naturalne piękno, przy zachowaniu pełnego bezpieczeństwa i indywidualnego podejścia do każdego przypadku.",
+    "ctaPrimary": "Umów konsultację",
+    "ctaSecondary": "Zobacz zabiegi",
+    "highlight": "Naturalny efekt. Medyczna precyzja. Luksusowe podejście."
+  }
+
 }

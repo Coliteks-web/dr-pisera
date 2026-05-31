@@ -72,35 +72,44 @@
   },
 
   "about": {
-    "title": "Über mich",
-    "paragraphs": [
-      "Ich bin Absolvent der Medizinischen Fakultät der Medizinischen Universität Łódź.",
-      "Ich verfüge über den Facharztabschluss der ersten Stufe in Allgemeinchirurgie sowie über die Facharztanerkennung für Plastische Chirurgie.",
-      "Seit 1994 bin ich mit der Klinischen Abteilung für Plastische, Rekonstruktive und Ästhetische Chirurgie des Universitätsklinikums Nr. 1 in Łódź verbunden.",
-      "Ich verfüge über mehr als 30 Jahre Erfahrung im gesamten Spektrum der plastischen und rekonstruktiven Chirurgie.",
-      "Den Doktorgrad der Medizinwissenschaften erlangte ich mit einer Dissertation auf dem Gebiet der Nasenchirurgie.",
-      "Ich bin Autor wissenschaftlicher Publikationen und Mitglied der Polnischen Gesellschaft für Plastische Chirurgie."
-    ],
-    "highlight": "Die plastische Chirurgie ist für mich nicht nur ein Beruf, sondern auch Leidenschaft und Berufung.",
+  "title": "Über mich",
 
-    "cards": {
-      "specialization": {
-        "title": "Fachgebiet",
-        "value": "Plastische Chirurgie",
-        "subtitle": "Rekonstruktive und ästhetische Chirurgie"
-      },
-      "experience": {
-        "title": "Erfahrung",
-        "value": "30+ Jahre",
-        "subtitle": "klinische Praxis"
-      },
-      "position": {
-        "title": "Position",
-        "value": "Stellvertretender Chefarzt",
-        "subtitle": "Universitätsklinikum Nr. 1 in Łódź"
-      }
+  "paragraphs": [
+    "Meine Mission ist es, langjährige klinische Erfahrung mit modernen Techniken der plastischen Chirurgie zu verbinden, um Patientensicherheit, natürliche Ergebnisse und höchste medizinische Behandlungsstandards zu gewährleisten.",
+
+    "Ich bin Absolvent der Medizinischen Fakultät der Medizinischen Universität Łódź. Ich verfüge über die erste Facharztausbildung in Allgemeinchirurgie sowie den Facharzttitel für Plastische Chirurgie, erworben nach Bestehen der staatlichen Facharztprüfung mit sehr gutem Ergebnis.",
+
+    "Seit 1994 bin ich in der Klinischen Abteilung für Plastische, Rekonstruktive und Ästhetische Chirurgie des Universitätsklinikums Nr. 1 in Łódź tätig, wo ich seit vielen Jahren die Funktion des stellvertretenden Abteilungsleiters innehabe. Darüber hinaus berate ich Patienten und führe plastisch-chirurgische Eingriffe in renommierten Privatkliniken durch.",
+
+    "Ich verfüge über mehr als 30 Jahre Erfahrung in der plastischen und rekonstruktiven Chirurgie, die das gesamte Spektrum ästhetischer und rekonstruktiver Eingriffe im Bereich Gesicht, Brust und Körper umfasst. Meine Fachkompetenz habe ich durch zahlreiche Kurse, Fortbildungen und wissenschaftliche Konferenzen im In- und Ausland kontinuierlich erweitert.",
+
+    "Ich bin Doktor der medizinischen Wissenschaften und habe meinen Doktortitel auf Grundlage einer ausgezeichnet bewerteten Dissertation mit dem Titel „Bewertung der Langzeitergebnisse der chirurgischen Behandlung angeborener Nasendeformitäten. Klinische und anthropometrische Studien“ erworben.",
+
+    "Ich bin Autor und Mitautor wissenschaftlicher Publikationen in nationalen und internationalen Fachzeitschriften sowie aktives Mitglied der Polnischen Gesellschaft für Plastische, Rekonstruktive und Ästhetische Chirurgie. Regelmäßig nehme ich an wissenschaftlichen Kongressen und Fachveranstaltungen teil.",
+
+    "Die plastische Chirurgie ist für mich nicht nur ein Beruf, sondern auch eine lebenslange Leidenschaft und Verantwortung gegenüber meinen Patienten, die es mir ermöglicht, meine Fähigkeiten kontinuierlich zu verbessern und höchste Behandlungsstandards zu gewährleisten."
+  ],
+
+  "highlight": "Über 30 Jahre Erfahrung in der plastischen, rekonstruktiven und ästhetischen Chirurgie – Sicherheit, Präzision und natürliche Ergebnisse.",
+
+  "cards": {
+    "specialization": {
+      "title": "Fachgebiet",
+      "value": "Plastische Chirurgie",
+      "subtitle": "rekonstruktiv & ästhetisch"
+    },
+    "experience": {
+      "title": "Erfahrung",
+      "value": "30+ Jahre",
+      "subtitle": "klinische Praxis"
+    },
+    "position": {
+      "title": "Position",
+      "value": "Stellvertretender Abteilungsleiter",
+      "subtitle": "Universitätsklinikum Nr. 1, Łódź"
     }
-  },
+  }
+},
 
   "pricing": {
     "title": "Preisliste",
