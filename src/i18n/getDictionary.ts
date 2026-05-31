@@ -6,7 +6,6 @@ import de from './locales/de.json';
 import type { Dictionary } from '@/types/dictionary';
 import type { Locale } from './config';
 
-// partial → bo tłumaczenia mogą być niepełne
 const dictionaries: Record<Locale, Partial<Dictionary>> = {
   pl,
   en,
@@ -14,29 +13,37 @@ const dictionaries: Record<Locale, Partial<Dictionary>> = {
   de,
 };
 
-// 🔥 deep merge (fallback PL + override)
-function deepMerge<T>(base: T, override?: Partial<T>): T {
+type DictionaryValue = string | number | boolean | null | Dictionary | DictionaryValue[];
+
+// 🔥 type guard
+function isObject(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
+// 🔥 deep merge bez any
+function deepMerge<T extends Record<string, unknown>>(
+  base: T,
+  override?: Partial<T>
+): T {
   if (!override) return base;
 
-  const result: any = { ...base };
+  const result: Record<string, unknown> = { ...base };
 
   for (const key in override) {
-    const baseValue = (base as any)[key];
-    const overrideValue = (override as any)[key];
+    const baseValue = base[key];
+    const overrideValue = override[key];
 
-    if (
-      baseValue &&
-      typeof baseValue === 'object' &&
-      !Array.isArray(baseValue) &&
-      typeof overrideValue === 'object'
-    ) {
-      result[key] = deepMerge(baseValue, overrideValue);
-    } else {
+    if (isObject(baseValue) && isObject(overrideValue)) {
+      result[key] = deepMerge(
+        baseValue as Record<string, unknown>,
+        overrideValue as Record<string, unknown>
+      );
+    } else if (overrideValue !== undefined) {
       result[key] = overrideValue;
     }
   }
 
-  return result;
+  return result as T;
 }
 
 // 🔥 główna funkcja
