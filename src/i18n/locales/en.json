@@ -24,7 +24,7 @@
     "breast-augmentation": "Breast Augmentation",
     "breast-lift": "Breast Lift",
     "breast-lift-augmentation": "Breast Lift with Implants",
-    "breast-reduction": "Breast Reduction and Lift",
+    "breast-reduction-lift": "Breast Reduction and Lift",
     "implant-exchange": "Breast Implant Replacement",
     "nipple-correction": "Nipple and Areola Correction",
 
@@ -54,7 +54,7 @@
         "breast-augmentation",
         "breast-lift",
         "breast-lift-augmentation",
-        "breast-reduction",
+        "breast-reduction-lift",
         "implant-exchange",
         "nipple-correction"
       ]

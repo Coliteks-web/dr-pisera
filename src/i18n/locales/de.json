@@ -24,7 +24,7 @@
       "breast-augmentation": "Brustvergrößerung mit Implantaten",
       "breast-lift": "Bruststraffung",
       "breast-lift-augmentation": "Bruststraffung mit Implantaten",
-      "breast-reduction": "Brustverkleinerung und Straffung",
+      "breast-reduction-lift": "Brustverkleinerung und Straffung",
       "implant-exchange": "Brustimplantatwechsel",
       "nipple-correction": "Korrektur der Brustwarzen und Warzenhöfe",
 
@@ -54,7 +54,7 @@
           "breast-augmentation",
           "breast-lift",
           "breast-lift-augmentation",
-          "breast-reduction",
+          "breast-reduction-lift",
           "implant-exchange",
           "nipple-correction"
         ]

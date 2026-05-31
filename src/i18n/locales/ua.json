@@ -24,7 +24,7 @@
     "breast-augmentation": "Збільшення грудей імплантатами",
     "breast-lift": "Підтяжка грудей",
     "breast-lift-augmentation": "Підтяжка грудей зі збільшенням імплантатами",
-    "breast-reduction": "Зменшення та підтяжка грудей",
+    "breast-reduction-lift": "Зменшення та підтяжка грудей",
     "implant-exchange": "Заміна грудних імплантатів",
     "nipple-correction": "Корекція сосків та ареол",
 
@@ -54,7 +54,7 @@
         "breast-augmentation",
         "breast-lift",
         "breast-lift-augmentation",
-        "breast-reduction",
+        "breast-reduction-lift",
         "implant-exchange",
         "nipple-correction"
       ]
