@@ -1,69 +1,75 @@
 {
   "navbar": {
-    "about": "About me",
-    "procedures": "Procedures",
-    "pricing": "Pricing",
-    "clinics": "Clinics",
-    "contact": "Contact",
-    "consultation": "Book consultation",
+  "about": "About Me",
+  "procedures": "Procedures",
+  "pricing": "Pricing",
+  "clinics": "Clinics",
+  "contact": "Contact",
+  "consultation": "Book a Consultation",
 
-    "face": "Face",
-    "breast": "Breast",
-    "body": "Body",
+  "face": "Face",
+  "breast": "Breast",
+  "body": "Body",
 
-    "eyelids": "Eyelid surgery",
-    "nose": "Rhinoplasty",
-    "facelift": "Facelift and neck lift (SMAS)",
-    "temporalLift": "Temple lift",
-    "browLift": "Brow lift",
-    "ears": "Otoplasty",
-    "liplift": "Lip lift",
+  "labels": {
+    "upper-eyelid-surgery": "Upper Eyelid Surgery",
+    "lower-eyelid-surgery": "Lower Eyelid Surgery",
+    "facelift-smas": "SMAS Facelift and Neck Lift",
+    "temporal-lift": "Temporal Lift",
+    "brow-lift": "Brow Lift",
+    "otoplasty": "Otoplasty",
+    "rhinoplasty": "Rhinoplasty",
+    "lip-lift": "Lip Lift",
 
-    "augmentation": "Breast augmentation with implants",
-    "breastlift": "Breast lift (mastopexy)",
-    "breastliftAugmentation": "Breast lift with implants",
-    "reduction": "Breast reduction and lift",
-    "implants": "Breast implant replacement",
-    "nipples": "Inverted nipple correction",
+    "breast-augmentation": "Breast Augmentation",
+    "breast-lift": "Breast Lift",
+    "breast-lift-augmentation": "Breast Lift with Implants",
+    "breast-reduction": "Breast Reduction and Lift",
+    "implant-exchange": "Breast Implant Replacement",
+    "nipple-correction": "Nipple and Areola Correction",
 
-    "abdominoplasty": "Abdominoplasty (tummy tuck)",
-    "gynecomastia": "Gynecomastia surgery",
-    "scars": "Scar revision surgery",
-
-    "proceduresMenu": {
-      "face": {
-        "title": "Facial plastic surgery",
-        "items": [
-          "eyelids",
-          "nose",
-          "facelift",
-          "temporalLift",
-          "browLift",
-          "ears",
-          "liplift"
-        ]
-      },
-      "breast": {
-        "title": "Breast plastic surgery",
-        "items": [
-          "augmentation",
-          "breastlift",
-          "breastliftAugmentation",
-          "reduction",
-          "implants",
-          "nipples"
-        ]
-      },
-      "body": {
-        "title": "Body contouring surgery",
-        "items": [
-          "abdominoplasty",
-          "gynecomastia",
-          "scars"
-        ]
-      }
-    }
+    "abdominoplasty": "Abdominoplasty (Tummy Tuck)",
+    "gynecomastia": "Gynecomastia Surgery",
+    "scar-correction": "Scar Revision Surgery"
   },
+
+  "proceduresMenu": {
+    "face": {
+      "title": "Facial Plastic Surgery",
+      "items": [
+        "upper-eyelid-surgery",
+        "lower-eyelid-surgery",
+        "facelift-smas",
+        "temporal-lift",
+        "brow-lift",
+        "otoplasty",
+        "rhinoplasty",
+        "lip-lift"
+      ]
+    },
+
+    "breast": {
+      "title": "Breast Surgery",
+      "items": [
+        "breast-augmentation",
+        "breast-lift",
+        "breast-lift-augmentation",
+        "breast-reduction",
+        "implant-exchange",
+        "nipple-correction"
+      ]
+    },
+
+    "body": {
+      "title": "Body Contouring Surgery",
+      "items": [
+        "abdominoplasty",
+        "gynecomastia",
+        "scar-correction"
+      ]
+    }
+  }
+},
 
   "about": {
     "title": "About me",

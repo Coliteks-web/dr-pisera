@@ -1,0 +1,246 @@
+{
+  "navbar": {
+    "about": "Über mich",
+    "procedures": "Behandlungen",
+    "pricing": "Preisliste",
+    "clinics": "Kliniken",
+    "contact": "Kontakt",
+    "consultation": "Beratung vereinbaren",
+
+    "face": "Gesicht",
+    "breast": "Brust",
+    "body": "Körper",
+
+    "labels": {
+      "upper-eyelid-surgery": "Oberlidstraffung",
+      "lower-eyelid-surgery": "Unterlidstraffung",
+      "facelift-smas": "Gesichts- und Halslifting (SMAS)",
+      "temporal-lift": "Schläfenlifting",
+      "brow-lift": "Brauenlifting",
+      "otoplasty": "Ohrenkorrektur",
+      "rhinoplasty": "Nasenkorrektur",
+      "lip-lift": "Lip Lift",
+
+      "breast-augmentation": "Brustvergrößerung mit Implantaten",
+      "breast-lift": "Bruststraffung",
+      "breast-lift-augmentation": "Bruststraffung mit Implantaten",
+      "breast-reduction": "Brustverkleinerung und Straffung",
+      "implant-exchange": "Brustimplantatwechsel",
+      "nipple-correction": "Korrektur der Brustwarzen und Warzenhöfe",
+
+      "abdominoplasty": "Bauchdeckenstraffung (Abdominoplastik)",
+      "gynecomastia": "Gynäkomastie-Behandlung",
+      "scar-correction": "Korrektur von postoperativen und traumatischen Narben"
+    },
+
+    "proceduresMenu": {
+      "face": {
+        "title": "Plastische Gesichtschirurgie",
+        "items": [
+          "upper-eyelid-surgery",
+          "lower-eyelid-surgery",
+          "facelift-smas",
+          "temporal-lift",
+          "brow-lift",
+          "otoplasty",
+          "rhinoplasty",
+          "lip-lift"
+        ]
+      },
+
+      "breast": {
+        "title": "Plastische Brustchirurgie",
+        "items": [
+          "breast-augmentation",
+          "breast-lift",
+          "breast-lift-augmentation",
+          "breast-reduction",
+          "implant-exchange",
+          "nipple-correction"
+        ]
+      },
+
+      "body": {
+        "title": "Plastische Körperchirurgie",
+        "items": [
+          "abdominoplasty",
+          "gynecomastia",
+          "scar-correction"
+        ]
+      }
+    }
+  },
+
+  "about": {
+    "title": "Über mich",
+    "paragraphs": [
+      "Ich bin Absolvent der Medizinischen Fakultät der Medizinischen Universität Łódź.",
+      "Ich verfüge über den Facharztabschluss der ersten Stufe in Allgemeinchirurgie sowie über die Facharztanerkennung für Plastische Chirurgie.",
+      "Seit 1994 bin ich mit der Klinischen Abteilung für Plastische, Rekonstruktive und Ästhetische Chirurgie des Universitätsklinikums Nr. 1 in Łódź verbunden.",
+      "Ich verfüge über mehr als 30 Jahre Erfahrung im gesamten Spektrum der plastischen und rekonstruktiven Chirurgie.",
+      "Den Doktorgrad der Medizinwissenschaften erlangte ich mit einer Dissertation auf dem Gebiet der Nasenchirurgie.",
+      "Ich bin Autor wissenschaftlicher Publikationen und Mitglied der Polnischen Gesellschaft für Plastische Chirurgie."
+    ],
+    "highlight": "Die plastische Chirurgie ist für mich nicht nur ein Beruf, sondern auch Leidenschaft und Berufung.",
+
+    "cards": {
+      "specialization": {
+        "title": "Fachgebiet",
+        "value": "Plastische Chirurgie",
+        "subtitle": "Rekonstruktive und ästhetische Chirurgie"
+      },
+      "experience": {
+        "title": "Erfahrung",
+        "value": "30+ Jahre",
+        "subtitle": "klinische Praxis"
+      },
+      "position": {
+        "title": "Position",
+        "value": "Stellvertretender Chefarzt",
+        "subtitle": "Universitätsklinikum Nr. 1 in Łódź"
+      }
+    }
+  },
+
+  "pricing": {
+    "title": "Preisliste",
+    "showPrice": "Preis anzeigen",
+
+    "consultation": {
+      "name": "Beratung",
+      "price": "400 PLN"
+    },
+
+    "face": {
+      "title": "Plastische Gesichtschirurgie",
+
+      "nose": {
+        "title": "Nase",
+        "items": [
+          {
+            "name": "Komplette Nasenkorrektur",
+            "price": "25000 - 28000 PLN"
+          },
+          {
+            "name": "Korrektur des Knorpelanteils",
+            "price": "16000 - 18000 PLN"
+          },
+          {
+            "name": "Nasenscheidewandkorrektur",
+            "price": "9000 - 10000 PLN"
+          },
+          {
+            "name": "Verengung der Nasenflügel",
+            "price": "7500 PLN"
+          },
+          {
+            "name": "Sekundäre Nasenkorrektur",
+            "price": "26000 - 30000 PLN"
+          }
+        ]
+      },
+
+      "eyes": {
+        "title": "Augenlider",
+        "items": [
+          {
+            "name": "Oberlidstraffung",
+            "price": "7000 - 7500 PLN"
+          },
+          {
+            "name": "Unterlidstraffung",
+            "price": "8000 - 9000 PLN"
+          },
+          {
+            "name": "Ptosis-Korrektur",
+            "price": "10000 PLN"
+          }
+        ]
+      },
+
+      "lifting": {
+        "title": "Facelift",
+        "items": [
+          {
+            "name": "Gesichts- und Halslifting",
+            "price": "28000 PLN"
+          },
+          {
+            "name": "Schläfenlifting",
+            "price": "16000 PLN"
+          },
+          {
+            "name": "Brauenlifting",
+            "price": "9000 PLN"
+          }
+        ]
+      },
+
+      "other": {
+        "title": "Weitere Behandlungen",
+        "items": [
+          {
+            "name": "Lip Lift",
+            "price": "8000 PLN"
+          },
+          {
+            "name": "Ohrenkorrektur",
+            "price": "9000 PLN"
+          },
+          {
+            "name": "Korrektur eingerissener Ohrläppchen",
+            "price": "3000 PLN"
+          }
+        ]
+      }
+    },
+
+    "breast": {
+      "title": "Plastische Brustchirurgie",
+      "items": [
+        {
+          "name": "Brustvergrößerung mit Implantaten",
+          "price": "24000 - 26000 PLN"
+        },
+        {
+          "name": "Bruststraffung (Mastopexie)",
+          "price": "17000 - 20000 PLN"
+        },
+        {
+          "name": "Bruststraffung mit Implantaten",
+          "price": "33000 - 35000 PLN"
+        },
+        {
+          "name": "Brustverkleinerung mit Straffung",
+          "price": "25000 - 26000 PLN"
+        },
+        {
+          "name": "Brustimplantatwechsel",
+          "price": "ab 25000 PLN"
+        },
+        {
+          "name": "Korrektur eingezogener Brustwarzen",
+          "price": "6000 PLN"
+        }
+      ]
+    },
+
+    "body": {
+      "title": "Plastische Körperchirurgie",
+      "items": [
+        {
+          "name": "Bauchdeckenstraffung (Abdominoplastik)",
+          "price": "24000 - 26000 PLN"
+        },
+        {
+          "name": "Gynäkomastie",
+          "price": "12000 - 16000 PLN"
+        },
+        {
+          "name": "Korrektur postoperativer und traumatischer Narben",
+          "price": "ab 4000 PLN"
+        }
+      ]
+    }
+  }
+}

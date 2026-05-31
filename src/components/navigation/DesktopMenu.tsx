@@ -104,7 +104,7 @@ export default function DesktopMenu({ dict, locale }: Props) {
                     return (
                       <Link
                         key={itemKey}
-                        href={`/${locale}/procedures/${itemKey}`}
+                        href={`/${locale}/procedures#${itemKey}`}
                         className="block text-sm transition hover:translate-x-1"
                         onClick={() => setOpen(false)}
                       >

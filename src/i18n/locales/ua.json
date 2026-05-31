@@ -1,99 +1,75 @@
 {
   "navbar": {
-    "about": "Про мене",
-    "procedures": "Процедури",
-    "pricing": "Ціни",
-    "clinics": "Клініки",
-    "contact": "Контакт",
-    "consultation": "Записатися на консультацію",
+  "about": "Про мене",
+  "procedures": "Процедури",
+  "pricing": "Ціни",
+  "clinics": "Клініки",
+  "contact": "Контакти",
+  "consultation": "Записатися на консультацію",
 
-    "face": "Обличчя",
-    "breast": "Груди",
-    "body": "Тіло",
+  "face": "Обличчя",
+  "breast": "Груди",
+  "body": "Тіло",
 
-    "eyelids": "Пластика повік",
-    "nose": "Ринопластика",
-    "facelift": "Підтяжка обличчя та шиї (SMAS)",
-    "temporalLift": "Скронева підтяжка",
-    "browLift": "Підтяжка брів",
-    "ears": "Отопластика",
-    "liplift": "Підняття верхньої губи",
+  "labels": {
+    "upper-eyelid-surgery": "Пластика верхніх повік",
+    "lower-eyelid-surgery": "Пластика нижніх повік",
+    "facelift-smas": "SMAS-ліфтинг обличчя та шиї",
+    "temporal-lift": "Скроневий ліфтинг",
+    "brow-lift": "Ліфтинг брів",
+    "otoplasty": "Отопластика",
+    "rhinoplasty": "Ринопластика",
+    "lip-lift": "Ліп-ліфт",
 
-    "augmentation": "Збільшення грудей імплантами",
-    "breastlift": "Підтяжка грудей",
-    "breastliftAugmentation": "Підтяжка грудей з імплантами",
-    "reduction": "Зменшення та підтяжка грудей",
-    "implants": "Заміна грудних імплантів",
-    "nipples": "Корекція втягнутих сосків",
+    "breast-augmentation": "Збільшення грудей імплантатами",
+    "breast-lift": "Підтяжка грудей",
+    "breast-lift-augmentation": "Підтяжка грудей зі збільшенням імплантатами",
+    "breast-reduction": "Зменшення та підтяжка грудей",
+    "implant-exchange": "Заміна грудних імплантатів",
+    "nipple-correction": "Корекція сосків та ареол",
 
-    "abdominoplasty": "Абдомінопластика",
+    "abdominoplasty": "Абдомінопластика (пластика живота)",
     "gynecomastia": "Лікування гінекомастії",
-    "scars": "Корекція рубців",
-
-    "proceduresMenu": {
-      "face": {
-        "title": "Пластична хірургія обличчя",
-        "items": [
-          "eyelids",
-          "nose",
-          "facelift",
-          "temporalLift",
-          "browLift",
-          "ears",
-          "liplift"
-        ]
-      },
-      "breast": {
-        "title": "Пластична хірургія грудей",
-        "items": [
-          "augmentation",
-          "breastlift",
-          "breastliftAugmentation",
-          "reduction",
-          "implants",
-          "nipples"
-        ]
-      },
-      "body": {
-        "title": "Пластична хірургія тіла",
-        "items": [
-          "abdominoplasty",
-          "gynecomastia",
-          "scars"
-        ]
-      }
-    }
+    "scar-correction": "Корекція післяопераційних та травматичних рубців"
   },
 
-  "about": {
-    "title": "Про мене",
-    "paragraphs": [
-      "Я є випускником медичного факультету Медичного університету Лодзі. Маю перший ступінь спеціалізації з загальної хірургії та спеціалізацію з пластичної хірургії.",
-      "З 1994 року працюю у клінічному відділенні пластичної, реконструктивної та естетичної хірургії Університетської лікарні №1 у Лодзі.",
-      "Маю понад 30 років досвіду у сфері пластичної та реконструктивної хірургії.",
-      "Отримав ступінь PhD на основі досліджень у галузі хірургії носа.",
-      "Є автором наукових публікацій та членом Польського товариства пластичної хірургії."
-    ],
-    "highlight": "Пластична хірургія — це для мене не лише професія, а й покликання.",
+  "proceduresMenu": {
+    "face": {
+      "title": "Пластична хірургія обличчя",
+      "items": [
+        "upper-eyelid-surgery",
+        "lower-eyelid-surgery",
+        "facelift-smas",
+        "temporal-lift",
+        "brow-lift",
+        "otoplasty",
+        "rhinoplasty",
+        "lip-lift"
+      ]
+    },
 
-    "cards": {
-      "specialization": {
-        "title": "Спеціалізація",
-        "value": "Пластична хірургія",
-        "subtitle": "Реконструктивна та естетична"
-      },
-      "experience": {
-        "title": "Досвід",
-        "value": "30+ років",
-        "subtitle": "клінічної практики"
-      },
-      "position": {
-        "title": "Посада",
-        "value": "Заступник завідувача",
-        "subtitle": "Університетська лікарня №1 у Лодзі"
-      }
+    "breast": {
+      "title": "Пластична хірургія грудей",
+      "items": [
+        "breast-augmentation",
+        "breast-lift",
+        "breast-lift-augmentation",
+        "breast-reduction",
+        "implant-exchange",
+        "nipple-correction"
+      ]
+    },
+
+    "body": {
+      "title": "Пластична хірургія тіла",
+      "items": [
+        "abdominoplasty",
+        "gynecomastia",
+        "scar-correction"
+      ]
     }
-  },
+  }
+},
   "pricing": {
   "title": "Прайс-лист",
   "showPrice": "Дізнатись ціну",

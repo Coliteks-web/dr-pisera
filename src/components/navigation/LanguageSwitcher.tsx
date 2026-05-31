@@ -18,6 +18,10 @@ const languages = [
     code: 'ua',
     label: 'Українська',
   },
+  {
+    code: 'de',
+    label: 'Deutsch',
+  }
 ];
 
 export default function LanguageSwitcher() {
@@ -81,7 +85,7 @@ export default function LanguageSwitcher() {
       >
         {languages.map((lang) => {
           const href = pathname.replace(
-            /^\/(pl|en|ua)/,
+            /^\/(pl|en|ua|de)/,
             `/${lang.code}`
           );
 

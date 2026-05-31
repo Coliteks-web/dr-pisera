@@ -11,55 +11,61 @@
     "breast": "Piersi",
     "body": "Sylwetka",
 
-    "eyelids": "Plastyka powiek",
-    "nose": "Plastyka nosa",
-    "facelift": "Lifting twarzy i szyi (SMAS)",
-    "temporalLift": "Lifting skroniowy",
-    "browLift": "Lifting brwi",
-    "ears": "Plastyka uszu",
-    "liplift": "Lip lift",
+    "labels": {
+      "upper-eyelid-surgery": "Plastyka powiek górnych",
+      "lower-eyelid-surgery": "Plastyka powiek dolnych",
+      "facelift-smas": "Lifting twarzy i szyi (SMAS)",
+      "temporal-lift": "Lifting skroniowy",
+      "brow-lift": "Lifting brwi",
+      "otoplasty": "Plastyka uszu",
+      "rhinoplasty": "Plastyka nosa",
+      "lip-lift": "Lip lift",
 
-    "augmentation": "Powiększenie piersi implantami",
-    "breastlift": "Lifting (podniesienie) piersi",
-    "breastliftAugmentation": "Lifting piersi z powiększeniem implantami",
-    "reduction": "Zmniejszenie i podniesienie piersi",
-    "implants": "Wymiana implantów piersi",
-    "nipples": "Plastyka wciągniętych brodawek sutkowych",
+      "breast-augmentation": "Powiększanie piersi implantami",
+      "breast-lift": "Podniesienie piersi",
+      "breast-lift-augmentation": "Lifting piersi z powiększeniem implantami",
+      "breast-reduction": "Zmniejszenie i podniesienie piersi",
+      "implant-exchange": "Wymiana implantów piersi",
+      "nipple-correction": "Korekcja brodawek i otoczek",
 
-    "abdominoplasty": "Plastyka powłok brzucha (abdominoplastyka)",
-    "gynecomastia": "Ginekomastia",
-    "scars": "Plastyka blizn pourazowych i pooperacyjnych",
+      "abdominoplasty": "Plastyka brzucha (abdominoplastyka)",
+      "gynecomastia": "Leczenie ginekomastii",
+      "scar-correction": "Plastyka blizn pourazowych i pooperacyjnych"
+    },
 
     "proceduresMenu": {
       "face": {
         "title": "Chirurgia plastyczna twarzy",
         "items": [
-          "eyelids",
-          "nose",
-          "facelift",
-          "temporalLift",
-          "browLift",
-          "ears",
-          "liplift"
+          "upper-eyelid-surgery",
+          "lower-eyelid-surgery",
+          "facelift-smas",
+          "temporal-lift",
+          "brow-lift",
+          "otoplasty",
+          "rhinoplasty",
+          "lip-lift"
         ]
       },
+
       "breast": {
         "title": "Chirurgia plastyczna piersi",
         "items": [
-          "augmentation",
-          "breastlift",
-          "breastliftAugmentation",
-          "reduction",
-          "implants",
-          "nipples"
+          "breast-augmentation",
+          "breast-lift",
+          "breast-lift-augmentation",
+          "breast-reduction",
+          "implant-exchange",
+          "nipple-correction"
         ]
       },
+
       "body": {
         "title": "Chirurgia plastyczna sylwetki",
         "items": [
           "abdominoplasty",
           "gynecomastia",
-          "scars"
+          "scar-correction"
         ]
       }
     }
@@ -233,5 +239,42 @@
         }
       ]
     }
+  },
+  "proceduresPage": {
+    "title": "Zabiegi chirurgii plastycznej",
+
+    "upper-eyelid-surgery": {
+      "title": "Plastyka powiek górnych (blefaroplastyka górna)",
+      "description": "Plastyka powiek górnych (blefaroplastyka górna) to zabieg chirurgii plastycznej polegający na usunięciu nadmiaru skóry, fragmentów mięśnia okrężnego oka oraz – w razie potrzeby – tkanki tłuszczowej odpowiedzialnej za powstawanie przepuklin tłuszczowych w okolicy powiek. Zabieg wykonywany jest w celu poprawy estetyki okolicy oczu oraz odmłodzenia wyglądu twarzy. Procedura przeprowadzana jest w znieczuleniu miejscowym i trwa około 45–60 minut. Nacięcie wykonywane jest w naturalnym fałdzie powieki, dzięki czemu blizna pooperacyjna jest praktycznie niewidoczna. Po usunięciu nadmiaru tkanek rana zostaje precyzyjnie zszyta cienkimi szwami i zabezpieczona opatrunkiem. Pacjent wraca do domu tego samego dnia, a szwy usuwa się po około 7 dniach. Po zabiegu mogą wystąpić przejściowe zasinienia i obrzęk, które ustępują zwykle w ciągu kilkunastu dni. Ostateczny efekt widoczny jest po kilku tygodniach, natomiast pełne wygojenie może trwać kilka miesięcy. Zalecenia obejmują unikanie wysiłku fizycznego, stosowanie chłodnych okładów, ochronę przed słońcem oraz przestrzeganie zaleceń lekarskich dotyczących pielęgnacji blizn."
+    },
+
+    "lower-eyelid-surgery": {
+        "title": "Plastyka powiek dolnych (blefaroplastyka dolna)",
+        "description": "Plastyka powiek dolnych to zabieg chirurgii plastycznej polegający na usunięciu nadmiaru skóry, części mięśnia oraz tkanki tłuszczowej tworzącej tzw. worki pod oczami. W wybranych przypadkach zabieg może być uzupełniony o kantopeksję, czyli wzmocnienie napięcia brzegu rzęsowego powieki dolnej w celu zapobiegania jej odwróceniu po operacji. Zabieg wykonywany jest w znieczuleniu miejscowym i trwa około 60–90 minut. Nacięcie prowadzone jest tuż poniżej linii rzęs, co sprawia, że blizna jest praktycznie niewidoczna. Po usunięciu nadmiaru tkanek rana zostaje starannie zszyta i zabezpieczona opatrunkiem. Pacjent wraca do domu tego samego dnia, a szwy usuwa się po 7–8 dniach. Po operacji mogą wystąpić obrzęk i zasinienia, które ustępują w ciągu kilkunastu dni. Ostateczny efekt widoczny jest po kilku tygodniach, a pełna stabilizacja tkanek następuje po kilku miesiącach. Zalecenia obejmują unikanie wysiłku fizycznego, chłodne okłady, ochronę przed słońcem oraz stosowanie maści zaleconych przez lekarza."
+    },
+     "facelift-smas": {
+    "title": "Lifting twarzy i szyi (lifting SMAS)",
+    "description": "Lifting twarzy i szyi (lifting SMAS) to zaawansowany, stosunkowo inwazyjny zabieg chirurgii plastycznej, którego celem jest kompleksowe odmłodzenie dolnych i środkowych partii twarzy oraz szyi. Procedura polega na napięciu i repozycji zwiotczałych tkanek skóry oraz głębszych warstw powięziowo-mięśniowych (SMAS – superficial musculoaponeurotic system), a także usunięciu nadmiaru skóry. Dzięki temu uzyskuje się poprawę owalu twarzy, wyraźniejsze zarysowanie linii żuchwy oraz redukcję zmarszczek i oznak starzenia w obrębie szyi. Zabieg wykonywany jest w znieczuleniu ogólnym lub miejscowym z sedacją i trwa około 3–4 godzin. Cięcia chirurgiczne prowadzone są w okolicy skroniowej, przed i za małżowiną uszną oraz w naturalnych załamaniach skóry lub linii włosów, co pozwala na maksymalne ukrycie blizn pooperacyjnych. Po zabiegu zakładany jest opatrunek uciskowy, a w okresie pooperacyjnym mogą wystąpić obrzęk, zasinienia oraz przejściowe uczucie napięcia skóry. Szwy usuwa się zazwyczaj po 7–14 dniach. Zabieg najczęściej wykonywany jest u pacjentów w wieku 40–64 lat, u których widoczne są umiarkowane lub zaawansowane oznaki starzenia twarzy i szyi. Rekonwalescencja wymaga unikania wysiłku fizycznego przez około 2 miesiące, stosowania chłodnych okładów na nieosłonięte opatrunkiem okolice, unikania alkoholu i palenia tytoniu przez około 6 tygodni oraz ochrony skóry przed słońcem i solarium przez 6–8 miesięcy. Po zdjęciu szwów zaleca się stosowanie preparatów na blizny zaleconych przez lekarza."
+  },
+  "temporal-lift": {
+    "title": "Lifting skroniowy (temporalny lifting brwi i okolicy oka)",
+    "description": "Lifting skroniowy jest małoinwazyjną odmianą liftingu twarzy, koncentrującą się na górnej części twarzy, szczególnie w okolicy skroni oraz zewnętrznych kącików oczu. Zabieg polega na uniesieniu i delikatnym napięciu tkanek miękkich, co prowadzi do uniesienia zewnętrznych części brwi, wygładzenia skóry w okolicy skroniowej oraz uzyskania efektu bardziej otwartego spojrzenia, tzw. „kociego oka”. Efektem procedury jest naturalne odmłodzenie górnej części twarzy bez konieczności wykonywania rozległej operacji. Zabieg może być przeprowadzony w znieczuleniu miejscowym lub w sedacji dożylnej i trwa około 1,5–2,5 godziny. Niewielkie nacięcia wykonywane są w obrębie owłosionej skóry głowy w okolicy skroniowej, dzięki czemu blizny pooperacyjne są dobrze ukryte i mało widoczne. Szwy usuwa się zwykle po 7–14 dniach. W okresie pooperacyjnym mogą wystąpić obrzęk i zasinienia w operowanej okolicy. Zalecenia pozabiegowe obejmują unikanie wysiłku fizycznego przez 4–6 tygodni, powstrzymanie się od palenia tytoniu i spożywania alkoholu przez około 4 tygodnie, stosowanie chłodnych okładów na operowane okolice oraz unikanie ekspozycji na słońce i solarium przez 6–8 miesięcy. Po zdjęciu szwów zaleca się stosowanie maści lub preparatów na blizny zaleconych przez lekarza."
+  },
+  "brow-lift": {
+    "title": "Lifting brwi",
+    "description": "Lifting brwi to zabieg chirurgii plastycznej mający na celu uniesienie opadających brwi, co pozwala na odmłodzenie okolicy oczu, częściowe wygładzenie zmarszczek czoła oraz nadanie twarzy bardziej wypoczętego i harmonijnego wyglądu. W wybranych przypadkach procedura może stanowić alternatywę dla plastyki powiek górnych lub jej uzupełnienie. Zabieg może być wykonywany różnymi technikami, w tym metodą endoskopową, skroniową lub bezpośrednią. Metoda skroniowa jest tożsama z liftingiem skroniowym, natomiast metoda bezpośrednia polega na wycięciu nadmiaru skóry w górnej granicy łuku brwiowego. Zabieg najczęściej wykonywany jest w znieczuleniu miejscowym, po którym pacjent może wrócić do domu tego samego dnia. Szwy usuwa się zazwyczaj po 7–10 dniach. W okresie pooperacyjnym zaleca się unikanie wysiłku fizycznego przez 2–4 tygodnie, powstrzymanie się od palenia tytoniu i spożywania alkoholu przez około 2 tygodnie, stosowanie chłodnych okładów na operowaną okolicę oraz unikanie ekspozycji na słońce i solarium przez około 6 miesięcy. Po zdjęciu szwów zaleca się stosowanie maści lub preparatów na blizny zaleconych przez lekarza."
+  },
+  "otoplasty": {
+    "title": "Otoplastyka (plastyka odstających uszu)",
+    "description": "Otoplastyka, czyli plastyka odstających uszu, to zabieg chirurgii plastycznej mający na celu korekcję kształtu oraz ustawienia małżowin usznych względem czaszki, co prowadzi do zmniejszenia ich odstawania. W wybranych przypadkach zabieg może obejmować również korekcję zewnętrznego brzegu małżowiny, na przykład usunięcie tzw. guzka Darwina. Procedura polega na wykonaniu niewielkiego cięcia za uchem, a następnie modelowaniu chrząstki małżowiny za pomocą specjalnych szwów, co pozwala na uzyskanie bardziej przylegającego i naturalnego ustawienia uszu. Zabieg może być wykonywany u dzieci powyżej 7. roku życia, u których zakończył się rozwój małżowiny usznej, oraz u osób dorosłych. Otoplastyka wykonywana jest w znieczuleniu miejscowym i trwa około 1,5 godziny. Po zabiegu zakładany jest opatrunek okrężny na uszy, a pacjent zwykle wraca do domu tego samego dnia. Szwy usuwa się po około 10 dniach. W okresie pooperacyjnym mogą wystąpić obrzęk, zasinienie oraz umiarkowany ból. Zalecenia pozabiegowe obejmują nieusuwanie opatrunku oraz unikanie mycia włosów do czasu zdjęcia szwów, zmianę opatrunku w 4. dobie po zabiegu, noszenie opaski ochronnej na uszy (tylko na noc) przez 4 tygodnie po usunięciu szwów, unikanie wysiłku fizycznego przez 3 tygodnie po zdjęciu szwów, ochronę uszu przed urazami przez około 6 miesięcy, unikanie ekspozycji na słońce i solarium przez 2 miesiące oraz powstrzymanie się od noszenia okularów przez 4 tygodnie po usunięciu szwów."
+  },
+  "rhinoplasty": {
+    "title": "Plastyka nosa (rhinoplasty)",
+    "description": "Plastyka nosa (rhinoplasty) to jeden z najbardziej złożonych zabiegów chirurgii plastycznej, którego celem jest poprawa estetyki nosa poprzez zmianę jego proporcji względem pozostałych struktur twarzy oraz – w razie potrzeby – poprawa funkcji oddechowej, np. poprzez korekcję przegrody nosowej. Wskazaniem do zabiegu mogą być zarówno wady wrodzone, jak i deformacje pourazowe lub niezadowolenie pacjenta z kształtu i wielkości nosa. Zabieg obejmuje korekcję części kostnej, chrzęstnej oraz tkanek miękkich nosa, w tym skrzydełek nosa. W zależności od zakresu operacji stosuje się metodę otwartą lub zamkniętą. W metodzie zamkniętej cięcia wykonywane są wewnątrz nosa, dzięki czemu blizny pozostają niewidoczne, natomiast w metodzie otwartej dodatkowe nacięcie wykonywane jest na słupku nosa, co zapewnia lepszy dostęp do struktur anatomicznych. Zabieg wykonywany jest w znieczuleniu ogólnym i trwa około 1–3 godzin. Po operacji do nosa zakładane są setony oraz ewentualne stabilizatory przegrody, a na zewnątrz nakładany jest opatrunek gipsowy. Setony usuwa się po 1–2 dobach, natomiast gips oraz szwy po około 9–10 dniach. Pacjent zwykle pozostaje w klinice przez 1 dobę. W okresie pooperacyjnym mogą wystąpić obrzęk i zasinienia, szczególnie w okolicy oczu. Zalecenia obejmują stosowanie chłodnych okładów na okolice oczodołów, unikanie moczenia nosa do czasu zdjęcia gipsu, spanie z uniesioną głową przez około 2–3 tygodnie, delikatną pielęgnację przedsionka nosa po usunięciu setonów, unikanie noszenia okularów przez 4–6 tygodni, ograniczenie wysiłku fizycznego przez około 2 miesiące oraz ochronę nosa przed urazami przez 6–8 miesięcy. Obrzęk i ograniczenie drożności nosa mogą utrzymywać się przez kilka miesięcy, a ostateczny efekt operacji widoczny jest po około 6 miesiącach lub później."
+  },
+  "lip-lift": {
+    "title": "Lip lift (chirurgiczne uniesienie wargi górnej)",
+    "description": "Lip lift to zabieg chirurgii plastycznej polegający na trwałym skróceniu odległości między podstawą nosa a wargą górną, co prowadzi do uniesienia i wyeksponowania czerwieni wargowej oraz nadania ustom pełniejszego, naturalnego wyglądu. Efekt ten uzyskuje się poprzez wycięcie wąskiego paska skóry pod nosem, najczęściej w kształcie tzw. „rogów byka” (bullhorn lip lift), co pozwala jednocześnie na subtelne wywinięcie wargi górnej i odmłodzenie dolnej części twarzy. Zabieg wykonywany jest w znieczuleniu miejscowym i trwa około 1 godziny. Rana zamykana jest cienkimi szwami i zabezpieczana opatrunkiem. Po zabiegu pacjent wraca do domu tego samego dnia. Szwy usuwa się po około 7 dniach. W okresie gojenia należy unikać moczenia rany do czasu zdjęcia szwów, chronić operowaną okolicę przed urazami, unikać intensywnej mimiki i gwałtownego oczyszczania okolicy nosa, ograniczyć aktywność fizyczną przez 2–3 tygodnie oraz unikać ekspozycji na słońce i solarium przez 3–4 miesiące. Po usunięciu szwów zaleca się delikatne natłuszczanie blizny zgodnie z zaleceniami lekarza."
+  }
   }
 }

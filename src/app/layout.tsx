@@ -11,19 +11,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pl" suppressHydrationWarning>
+    <html lang="pl" className="scroll-smooth" suppressHydrationWarning>
       <body suppressHydrationWarning>
-
         <CookieConsentProvider>
-
           {children}
 
           <CookieBanner />
           <Analytics />
           <FbPageView />
-
         </CookieConsentProvider>
-
       </body>
     </html>
   );
