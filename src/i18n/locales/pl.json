@@ -24,7 +24,7 @@
       "breast-augmentation": "Powiększanie piersi implantami",
       "breast-lift": "Podniesienie piersi",
       "breast-lift-augmentation": "Lifting piersi z powiększeniem implantami",
-      "breast-reduction": "Zmniejszenie i podniesienie piersi",
+      "breast-reduction-lift": "Zmniejszenie i podniesienie piersi",
       "implant-exchange": "Wymiana implantów piersi",
       "nipple-correction": "Korekcja brodawek i otoczek",
 
@@ -54,7 +54,7 @@
           "breast-augmentation",
           "breast-lift",
           "breast-lift-augmentation",
-          "breast-reduction",
+          "breast-reduction-lift",
           "implant-exchange",
           "nipple-correction"
         ]
@@ -241,40 +241,294 @@
     }
   },
   "proceduresPage": {
-    "title": "Zabiegi chirurgii plastycznej",
+  "title": "Zabiegi chirurgii plastycznej",
 
-    "upper-eyelid-surgery": {
-      "title": "Plastyka powiek górnych (blefaroplastyka górna)",
-      "description": "Plastyka powiek górnych (blefaroplastyka górna) to zabieg chirurgii plastycznej polegający na usunięciu nadmiaru skóry, fragmentów mięśnia okrężnego oka oraz – w razie potrzeby – tkanki tłuszczowej odpowiedzialnej za powstawanie przepuklin tłuszczowych w okolicy powiek. Zabieg wykonywany jest w celu poprawy estetyki okolicy oczu oraz odmłodzenia wyglądu twarzy. Procedura przeprowadzana jest w znieczuleniu miejscowym i trwa około 45–60 minut. Nacięcie wykonywane jest w naturalnym fałdzie powieki, dzięki czemu blizna pooperacyjna jest praktycznie niewidoczna. Po usunięciu nadmiaru tkanek rana zostaje precyzyjnie zszyta cienkimi szwami i zabezpieczona opatrunkiem. Pacjent wraca do domu tego samego dnia, a szwy usuwa się po około 7 dniach. Po zabiegu mogą wystąpić przejściowe zasinienia i obrzęk, które ustępują zwykle w ciągu kilkunastu dni. Ostateczny efekt widoczny jest po kilku tygodniach, natomiast pełne wygojenie może trwać kilka miesięcy. Zalecenia obejmują unikanie wysiłku fizycznego, stosowanie chłodnych okładów, ochronę przed słońcem oraz przestrzeganie zaleceń lekarskich dotyczących pielęgnacji blizn."
-    },
+  "categories": {
+    "facial": {
+      "title": "Chirurgia plastyczna twarzy",
+      "procedures": {
+        "upper-eyelid-surgery": {
+          "title": "Plastyka powiek górnych (blefaroplastyka górna)",
 
+          "description": "Plastyka powiek górnych (blefaroplastyka górna) to zabieg chirurgii plastycznej polegający na usunięciu nadmiaru skóry, fragmentów mięśnia okrężnego oka oraz – w razie potrzeby – tkanki tłuszczowej odpowiedzialnej za powstawanie przepuklin tłuszczowych w okolicy powiek. Zabieg wykonywany jest w celu poprawy estetyki okolicy oczu oraz odmłodzenia wyglądu twarzy. Procedura przeprowadzana jest w znieczuleniu miejscowym i trwa około 45–60 minut. Nacięcie wykonywane jest w naturalnym fałdzie powieki, dzięki czemu blizna pooperacyjna jest praktycznie niewidoczna. Po usunięciu nadmiaru tkanek rana zostaje precyzyjnie zszyta cienkimi szwami i zabezpieczona opatrunkiem. Pacjent wraca do domu tego samego dnia, a szwy usuwa się po około 7 dniach. Po zabiegu mogą wystąpić przejściowe zasinienia i obrzęk, które ustępują zwykle w ciągu kilkunastu dni. Ostateczny efekt widoczny jest po kilku tygodniach, natomiast pełne wygojenie może trwać kilka miesięcy.",
+
+          "recommendations": {
+            "title": "Zalecenia dla pacjenta",
+            "items": [
+              "Unikanie wysiłku fizycznego",
+              "Stosowanie chłodnych okładów",
+              "Ochrona przed słońcem",
+              "Przestrzeganie zaleceń dotyczących pielęgnacji blizn"
+            ]
+          }
+        }
+      
+    ,
     "lower-eyelid-surgery": {
-        "title": "Plastyka powiek dolnych (blefaroplastyka dolna)",
-        "description": "Plastyka powiek dolnych to zabieg chirurgii plastycznej polegający na usunięciu nadmiaru skóry, części mięśnia oraz tkanki tłuszczowej tworzącej tzw. worki pod oczami. W wybranych przypadkach zabieg może być uzupełniony o kantopeksję, czyli wzmocnienie napięcia brzegu rzęsowego powieki dolnej w celu zapobiegania jej odwróceniu po operacji. Zabieg wykonywany jest w znieczuleniu miejscowym i trwa około 60–90 minut. Nacięcie prowadzone jest tuż poniżej linii rzęs, co sprawia, że blizna jest praktycznie niewidoczna. Po usunięciu nadmiaru tkanek rana zostaje starannie zszyta i zabezpieczona opatrunkiem. Pacjent wraca do domu tego samego dnia, a szwy usuwa się po 7–8 dniach. Po operacji mogą wystąpić obrzęk i zasinienia, które ustępują w ciągu kilkunastu dni. Ostateczny efekt widoczny jest po kilku tygodniach, a pełna stabilizacja tkanek następuje po kilku miesiącach. Zalecenia obejmują unikanie wysiłku fizycznego, chłodne okłady, ochronę przed słońcem oraz stosowanie maści zaleconych przez lekarza."
-    },
+  "title": "Plastyka powiek dolnych (blefaroplastyka dolna)",
+
+  "description": "Plastyka powiek dolnych to zabieg chirurgii plastycznej polegający na usunięciu nadmiaru skóry, części mięśnia oraz tkanki tłuszczowej tworzącej tzw. worki pod oczami. W wybranych przypadkach zabieg może być uzupełniony o kantopeksję, czyli wzmocnienie napięcia brzegu rzęsowego powieki dolnej w celu zapobiegania jej odwróceniu po operacji. Zabieg wykonywany jest w znieczuleniu miejscowym i trwa około 60–90 minut. Nacięcie prowadzone jest tuż poniżej linii rzęs, co sprawia, że blizna jest praktycznie niewidoczna. Po usunięciu nadmiaru tkanek rana zostaje starannie zszyta i zabezpieczona opatrunkiem. Pacjent wraca do domu tego samego dnia, a szwy usuwa się po 7–8 dniach. Po operacji mogą wystąpić obrzęk i zasinienia, które ustępują w ciągu kilkunastu dni. Ostateczny efekt widoczny jest po kilku tygodniach, a pełna stabilizacja tkanek następuje po kilku miesiącach.",
+
+  "recommendations": {
+    "title": "Zalecenia dla pacjenta",
+    "items": [
+      "Unikanie wysiłku fizycznego",
+      "Stosowanie chłodnych okładów",
+      "Ochrona przed słońcem",
+      "Stosowanie maści zaleconych przez lekarza"
+    ]
+  }
+},
      "facelift-smas": {
-    "title": "Lifting twarzy i szyi (lifting SMAS)",
-    "description": "Lifting twarzy i szyi (lifting SMAS) to zaawansowany, stosunkowo inwazyjny zabieg chirurgii plastycznej, którego celem jest kompleksowe odmłodzenie dolnych i środkowych partii twarzy oraz szyi. Procedura polega na napięciu i repozycji zwiotczałych tkanek skóry oraz głębszych warstw powięziowo-mięśniowych (SMAS – superficial musculoaponeurotic system), a także usunięciu nadmiaru skóry. Dzięki temu uzyskuje się poprawę owalu twarzy, wyraźniejsze zarysowanie linii żuchwy oraz redukcję zmarszczek i oznak starzenia w obrębie szyi. Zabieg wykonywany jest w znieczuleniu ogólnym lub miejscowym z sedacją i trwa około 3–4 godzin. Cięcia chirurgiczne prowadzone są w okolicy skroniowej, przed i za małżowiną uszną oraz w naturalnych załamaniach skóry lub linii włosów, co pozwala na maksymalne ukrycie blizn pooperacyjnych. Po zabiegu zakładany jest opatrunek uciskowy, a w okresie pooperacyjnym mogą wystąpić obrzęk, zasinienia oraz przejściowe uczucie napięcia skóry. Szwy usuwa się zazwyczaj po 7–14 dniach. Zabieg najczęściej wykonywany jest u pacjentów w wieku 40–64 lat, u których widoczne są umiarkowane lub zaawansowane oznaki starzenia twarzy i szyi. Rekonwalescencja wymaga unikania wysiłku fizycznego przez około 2 miesiące, stosowania chłodnych okładów na nieosłonięte opatrunkiem okolice, unikania alkoholu i palenia tytoniu przez około 6 tygodni oraz ochrony skóry przed słońcem i solarium przez 6–8 miesięcy. Po zdjęciu szwów zaleca się stosowanie preparatów na blizny zaleconych przez lekarza."
-  },
+  "title": "Lifting twarzy i szyi (lifting SMAS)",
+
+  "description": "Lifting twarzy i szyi (lifting SMAS) to zaawansowany, stosunkowo inwazyjny zabieg chirurgii plastycznej, którego celem jest kompleksowe odmłodzenie dolnych i środkowych partii twarzy oraz szyi. Procedura polega na napięciu i repozycji zwiotczałych tkanek skóry oraz głębszych warstw powięziowo-mięśniowych (SMAS – superficial musculoaponeurotic system), a także usunięciu nadmiaru skóry. Dzięki temu uzyskuje się poprawę owalu twarzy, wyraźniejsze zarysowanie linii żuchwy oraz redukcję zmarszczek i oznak starzenia w obrębie szyi. Zabieg wykonywany jest w znieczuleniu ogólnym lub miejscowym z sedacją i trwa około 3–4 godzin. Cięcia chirurgiczne prowadzone są w okolicy skroniowej, przed i za małżowiną uszną oraz w naturalnych załamaniach skóry lub linii włosów, co pozwala na maksymalne ukrycie blizn pooperacyjnych. Po zabiegu zakładany jest opatrunek uciskowy, a w okresie pooperacyjnym mogą wystąpić obrzęk, zasinienia oraz przejściowe uczucie napięcia skóry. Szwy usuwa się zazwyczaj po 7–14 dniach. Zabieg najczęściej wykonywany jest u pacjentów w wieku 40–64 lat, u których widoczne są umiarkowane lub zaawansowane oznaki starzenia twarzy i szyi.",
+
+  "recommendations": {
+    "title": "Zalecenia dla pacjenta",
+    "items": [
+      "Unikanie wysiłku fizycznego przez około 2 miesiące",
+      "Stosowanie chłodnych okładów na nieosłonięte opatrunkiem okolice",
+      "Unikanie alkoholu i palenia tytoniu przez około 6 tygodni",
+      "Ochrona skóry przed słońcem i solarium przez 6–8 miesięcy",
+      "Stosowanie preparatów na blizny zaleconych przez lekarza po zdjęciu szwów"
+    ]
+  }
+},
   "temporal-lift": {
-    "title": "Lifting skroniowy (temporalny lifting brwi i okolicy oka)",
-    "description": "Lifting skroniowy jest małoinwazyjną odmianą liftingu twarzy, koncentrującą się na górnej części twarzy, szczególnie w okolicy skroni oraz zewnętrznych kącików oczu. Zabieg polega na uniesieniu i delikatnym napięciu tkanek miękkich, co prowadzi do uniesienia zewnętrznych części brwi, wygładzenia skóry w okolicy skroniowej oraz uzyskania efektu bardziej otwartego spojrzenia, tzw. „kociego oka”. Efektem procedury jest naturalne odmłodzenie górnej części twarzy bez konieczności wykonywania rozległej operacji. Zabieg może być przeprowadzony w znieczuleniu miejscowym lub w sedacji dożylnej i trwa około 1,5–2,5 godziny. Niewielkie nacięcia wykonywane są w obrębie owłosionej skóry głowy w okolicy skroniowej, dzięki czemu blizny pooperacyjne są dobrze ukryte i mało widoczne. Szwy usuwa się zwykle po 7–14 dniach. W okresie pooperacyjnym mogą wystąpić obrzęk i zasinienia w operowanej okolicy. Zalecenia pozabiegowe obejmują unikanie wysiłku fizycznego przez 4–6 tygodni, powstrzymanie się od palenia tytoniu i spożywania alkoholu przez około 4 tygodnie, stosowanie chłodnych okładów na operowane okolice oraz unikanie ekspozycji na słońce i solarium przez 6–8 miesięcy. Po zdjęciu szwów zaleca się stosowanie maści lub preparatów na blizny zaleconych przez lekarza."
-  },
-  "brow-lift": {
-    "title": "Lifting brwi",
-    "description": "Lifting brwi to zabieg chirurgii plastycznej mający na celu uniesienie opadających brwi, co pozwala na odmłodzenie okolicy oczu, częściowe wygładzenie zmarszczek czoła oraz nadanie twarzy bardziej wypoczętego i harmonijnego wyglądu. W wybranych przypadkach procedura może stanowić alternatywę dla plastyki powiek górnych lub jej uzupełnienie. Zabieg może być wykonywany różnymi technikami, w tym metodą endoskopową, skroniową lub bezpośrednią. Metoda skroniowa jest tożsama z liftingiem skroniowym, natomiast metoda bezpośrednia polega na wycięciu nadmiaru skóry w górnej granicy łuku brwiowego. Zabieg najczęściej wykonywany jest w znieczuleniu miejscowym, po którym pacjent może wrócić do domu tego samego dnia. Szwy usuwa się zazwyczaj po 7–10 dniach. W okresie pooperacyjnym zaleca się unikanie wysiłku fizycznego przez 2–4 tygodnie, powstrzymanie się od palenia tytoniu i spożywania alkoholu przez około 2 tygodnie, stosowanie chłodnych okładów na operowaną okolicę oraz unikanie ekspozycji na słońce i solarium przez około 6 miesięcy. Po zdjęciu szwów zaleca się stosowanie maści lub preparatów na blizny zaleconych przez lekarza."
-  },
+  "title": "Lifting skroniowy (temporalny lifting brwi i okolicy oka)",
+
+  "description": "Lifting skroniowy jest małoinwazyjną odmianą liftingu twarzy, koncentrującą się na górnej części twarzy, szczególnie w okolicy skroni oraz zewnętrznych kącików oczu. Zabieg polega na uniesieniu i delikatnym napięciu tkanek miękkich, co prowadzi do uniesienia zewnętrznych części brwi, wygładzenia skóry w okolicy skroniowej oraz uzyskania efektu bardziej otwartego spojrzenia, tzw. „kociego oka”. Efektem procedury jest naturalne odmłodzenie górnej części twarzy bez konieczności wykonywania rozległej operacji. Zabieg może być przeprowadzony w znieczuleniu miejscowym lub w sedacji dożylnej i trwa około 1,5–2,5 godziny. Niewielkie nacięcia wykonywane są w obrębie owłosionej skóry głowy w okolicy skroniowej, dzięki czemu blizny pooperacyjne są dobrze ukryte i mało widoczne. Szwy usuwa się zwykle po 7–14 dniach. W okresie pooperacyjnym mogą wystąpić obrzęk i zasinienia w operowanej okolicy.",
+
+  "recommendations": {
+    "title": "Zalecenia dla pacjenta",
+    "items": [
+      "Unikanie wysiłku fizycznego przez 4–6 tygodni",
+      "Powstrzymanie się od palenia tytoniu i spożywania alkoholu przez około 4 tygodnie",
+      "Stosowanie chłodnych okładów na operowane okolice",
+      "Unikanie ekspozycji na słońce i solarium przez 6–8 miesięcy",
+      "Stosowanie maści lub preparatów na blizny zaleconych przez lekarza po zdjęciu szwów"
+    ]
+  }
+},
+ "brow-lift": {
+  "title": "Lifting brwi",
+
+  "description": "Lifting brwi to zabieg chirurgii plastycznej mający na celu uniesienie opadających brwi, co pozwala na odmłodzenie okolicy oczu, częściowe wygładzenie zmarszczek czoła oraz nadanie twarzy bardziej wypoczętego i harmonijnego wyglądu. W wybranych przypadkach procedura może stanowić alternatywę dla plastyki powiek górnych lub jej uzupełnienie. Zabieg może być wykonywany różnymi technikami, w tym metodą endoskopową, skroniową lub bezpośrednią. Metoda skroniowa jest tożsama z liftingiem skroniowym, natomiast metoda bezpośrednia polega na wycięciu nadmiaru skóry w górnej granicy łuku brwiowego. Zabieg najczęściej wykonywany jest w znieczuleniu miejscowym, po którym pacjent może wrócić do domu tego samego dnia. Szwy usuwa się zazwyczaj po 7–10 dniach. W okresie pooperacyjnym mogą wystąpić obrzęk i zasinienia w operowanej okolicy.",
+
+  "recommendations": {
+    "title": "Zalecenia dla pacjenta",
+    "items": [
+      "Unikanie wysiłku fizycznego przez 2–4 tygodnie",
+      "Powstrzymanie się od palenia tytoniu i spożywania alkoholu przez około 2 tygodnie",
+      "Stosowanie chłodnych okładów na operowaną okolicę",
+      "Unikanie ekspozycji na słońce i solarium przez około 6 miesięcy",
+      "Stosowanie maści lub preparatów na blizny zaleconych przez lekarza po zdjęciu szwów"
+    ]
+  }
+},
   "otoplasty": {
-    "title": "Otoplastyka (plastyka odstających uszu)",
-    "description": "Otoplastyka, czyli plastyka odstających uszu, to zabieg chirurgii plastycznej mający na celu korekcję kształtu oraz ustawienia małżowin usznych względem czaszki, co prowadzi do zmniejszenia ich odstawania. W wybranych przypadkach zabieg może obejmować również korekcję zewnętrznego brzegu małżowiny, na przykład usunięcie tzw. guzka Darwina. Procedura polega na wykonaniu niewielkiego cięcia za uchem, a następnie modelowaniu chrząstki małżowiny za pomocą specjalnych szwów, co pozwala na uzyskanie bardziej przylegającego i naturalnego ustawienia uszu. Zabieg może być wykonywany u dzieci powyżej 7. roku życia, u których zakończył się rozwój małżowiny usznej, oraz u osób dorosłych. Otoplastyka wykonywana jest w znieczuleniu miejscowym i trwa około 1,5 godziny. Po zabiegu zakładany jest opatrunek okrężny na uszy, a pacjent zwykle wraca do domu tego samego dnia. Szwy usuwa się po około 10 dniach. W okresie pooperacyjnym mogą wystąpić obrzęk, zasinienie oraz umiarkowany ból. Zalecenia pozabiegowe obejmują nieusuwanie opatrunku oraz unikanie mycia włosów do czasu zdjęcia szwów, zmianę opatrunku w 4. dobie po zabiegu, noszenie opaski ochronnej na uszy (tylko na noc) przez 4 tygodnie po usunięciu szwów, unikanie wysiłku fizycznego przez 3 tygodnie po zdjęciu szwów, ochronę uszu przed urazami przez około 6 miesięcy, unikanie ekspozycji na słońce i solarium przez 2 miesiące oraz powstrzymanie się od noszenia okularów przez 4 tygodnie po usunięciu szwów."
-  },
+  "title": "Otoplastyka (plastyka odstających uszu)",
+
+  "description": "Otoplastyka, czyli plastyka odstających uszu, to zabieg chirurgii plastycznej mający na celu korekcję kształtu oraz ustawienia małżowin usznych względem czaszki, co prowadzi do zmniejszenia ich odstawania. W wybranych przypadkach zabieg może obejmować również korekcję zewnętrznego brzegu małżowiny, na przykład usunięcie tzw. guzka Darwina. Procedura polega na wykonaniu niewielkiego cięcia za uchem, a następnie modelowaniu chrząstki małżowiny za pomocą specjalnych szwów, co pozwala na uzyskanie bardziej przylegającego i naturalnego ustawienia uszu. Zabieg może być wykonywany u dzieci powyżej 7. roku życia, u których zakończył się rozwój małżowiny usznej, oraz u osób dorosłych. Otoplastyka wykonywana jest w znieczuleniu miejscowym i trwa około 1,5 godziny. Po zabiegu zakładany jest opatrunek okrężny na uszy, a pacjent zwykle wraca do domu tego samego dnia. Szwy usuwa się po około 10 dniach. W okresie pooperacyjnym mogą wystąpić obrzęk, zasinienie oraz umiarkowany ból.",
+
+  "recommendations": {
+    "title": "Zalecenia dla pacjenta",
+    "items": [
+      "Nie usuwać opatrunku ani nie myć włosów do czasu zdjęcia szwów",
+      "Zmiana opatrunku w 4. dobie po zabiegu",
+      "Noszenie opaski ochronnej na uszy (tylko w nocy) przez 4 tygodnie po usunięciu szwów",
+      "Unikanie wysiłku fizycznego przez 3 tygodnie po zdjęciu szwów",
+      "Ochrona uszu przed urazami przez około 6 miesięcy",
+      "Unikanie ekspozycji na słońce i solarium przez 2 miesiące",
+      "Powstrzymanie się od noszenia okularów przez 4 tygodnie po usunięciu szwów"
+    ]
+  }
+},
   "rhinoplasty": {
-    "title": "Plastyka nosa (rhinoplasty)",
-    "description": "Plastyka nosa (rhinoplasty) to jeden z najbardziej złożonych zabiegów chirurgii plastycznej, którego celem jest poprawa estetyki nosa poprzez zmianę jego proporcji względem pozostałych struktur twarzy oraz – w razie potrzeby – poprawa funkcji oddechowej, np. poprzez korekcję przegrody nosowej. Wskazaniem do zabiegu mogą być zarówno wady wrodzone, jak i deformacje pourazowe lub niezadowolenie pacjenta z kształtu i wielkości nosa. Zabieg obejmuje korekcję części kostnej, chrzęstnej oraz tkanek miękkich nosa, w tym skrzydełek nosa. W zależności od zakresu operacji stosuje się metodę otwartą lub zamkniętą. W metodzie zamkniętej cięcia wykonywane są wewnątrz nosa, dzięki czemu blizny pozostają niewidoczne, natomiast w metodzie otwartej dodatkowe nacięcie wykonywane jest na słupku nosa, co zapewnia lepszy dostęp do struktur anatomicznych. Zabieg wykonywany jest w znieczuleniu ogólnym i trwa około 1–3 godzin. Po operacji do nosa zakładane są setony oraz ewentualne stabilizatory przegrody, a na zewnątrz nakładany jest opatrunek gipsowy. Setony usuwa się po 1–2 dobach, natomiast gips oraz szwy po około 9–10 dniach. Pacjent zwykle pozostaje w klinice przez 1 dobę. W okresie pooperacyjnym mogą wystąpić obrzęk i zasinienia, szczególnie w okolicy oczu. Zalecenia obejmują stosowanie chłodnych okładów na okolice oczodołów, unikanie moczenia nosa do czasu zdjęcia gipsu, spanie z uniesioną głową przez około 2–3 tygodnie, delikatną pielęgnację przedsionka nosa po usunięciu setonów, unikanie noszenia okularów przez 4–6 tygodni, ograniczenie wysiłku fizycznego przez około 2 miesiące oraz ochronę nosa przed urazami przez 6–8 miesięcy. Obrzęk i ograniczenie drożności nosa mogą utrzymywać się przez kilka miesięcy, a ostateczny efekt operacji widoczny jest po około 6 miesiącach lub później."
-  },
+  "title": "Plastyka nosa (rhinoplasty)",
+
+  "description": "Plastyka nosa (rhinoplasty) to jeden z najbardziej złożonych zabiegów chirurgii plastycznej, którego celem jest poprawa estetyki nosa poprzez zmianę jego proporcji względem pozostałych struktur twarzy oraz – w razie potrzeby – poprawa funkcji oddechowej, np. poprzez korekcję przegrody nosowej. Wskazaniem do zabiegu mogą być zarówno wady wrodzone, jak i deformacje pourazowe lub niezadowolenie pacjenta z kształtu i wielkości nosa. Zabieg obejmuje korekcję części kostnej, chrzęstnej oraz tkanek miękkich nosa, w tym skrzydełek nosa. W zależności od zakresu operacji stosuje się metodę otwartą lub zamkniętą. W metodzie zamkniętej cięcia wykonywane są wewnątrz nosa, dzięki czemu blizny pozostają niewidoczne, natomiast w metodzie otwartej dodatkowe nacięcie wykonywane jest na słupku nosa, co zapewnia lepszy dostęp do struktur anatomicznych. Zabieg wykonywany jest w znieczuleniu ogólnym i trwa około 1–3 godzin. Po operacji do nosa zakładane są setony oraz ewentualne stabilizatory przegrody, a na zewnątrz nakładany jest opatrunek gipsowy. Setony usuwa się po 1–2 dobach, natomiast gips oraz szwy po około 9–10 dniach. Pacjent zwykle pozostaje w klinice przez 1 dobę. W okresie pooperacyjnym mogą wystąpić obrzęk i zasinienia, szczególnie w okolicy oczu.",
+
+  "recommendations": {
+    "title": "Zalecenia dla pacjenta",
+    "items": [
+      "Stosowanie chłodnych okładów na okolice oczodołów",
+      "Unikanie moczenia nosa do czasu zdjęcia gipsu",
+      "Spanie z uniesioną głową przez około 2–3 tygodnie",
+      "Delikatna pielęgnacja przedsionka nosa po usunięciu setonów",
+      "Unikanie noszenia okularów przez 4–6 tygodni",
+      "Ograniczenie wysiłku fizycznego przez około 2 miesiące",
+      "Ochrona nosa przed urazami przez 6–8 miesięcy"
+    ]
+  }
+},
   "lip-lift": {
-    "title": "Lip lift (chirurgiczne uniesienie wargi górnej)",
-    "description": "Lip lift to zabieg chirurgii plastycznej polegający na trwałym skróceniu odległości między podstawą nosa a wargą górną, co prowadzi do uniesienia i wyeksponowania czerwieni wargowej oraz nadania ustom pełniejszego, naturalnego wyglądu. Efekt ten uzyskuje się poprzez wycięcie wąskiego paska skóry pod nosem, najczęściej w kształcie tzw. „rogów byka” (bullhorn lip lift), co pozwala jednocześnie na subtelne wywinięcie wargi górnej i odmłodzenie dolnej części twarzy. Zabieg wykonywany jest w znieczuleniu miejscowym i trwa około 1 godziny. Rana zamykana jest cienkimi szwami i zabezpieczana opatrunkiem. Po zabiegu pacjent wraca do domu tego samego dnia. Szwy usuwa się po około 7 dniach. W okresie gojenia należy unikać moczenia rany do czasu zdjęcia szwów, chronić operowaną okolicę przed urazami, unikać intensywnej mimiki i gwałtownego oczyszczania okolicy nosa, ograniczyć aktywność fizyczną przez 2–3 tygodnie oraz unikać ekspozycji na słońce i solarium przez 3–4 miesiące. Po usunięciu szwów zaleca się delikatne natłuszczanie blizny zgodnie z zaleceniami lekarza."
+  "title": "Lip lift (chirurgiczne uniesienie wargi górnej)",
+
+  "description": "Lip lift to zabieg chirurgii plastycznej polegający na trwałym skróceniu odległości między podstawą nosa a wargą górną, co prowadzi do uniesienia i wyeksponowania czerwieni wargowej oraz nadania ustom pełniejszego, naturalnego wyglądu. Efekt ten uzyskuje się poprzez wycięcie wąskiego paska skóry pod nosem, najczęściej w kształcie tzw. „rogów byka” (bullhorn lip lift), co pozwala jednocześnie na subtelne wywinięcie wargi górnej i odmłodzenie dolnej części twarzy. Zabieg wykonywany jest w znieczuleniu miejscowym i trwa około 1 godziny. Rana zamykana jest cienkimi szwami i zabezpieczana opatrunkiem. Po zabiegu pacjent wraca do domu tego samego dnia. Szwy usuwa się po około 7 dniach. W okresie gojenia należy unikać moczenia rany do czasu zdjęcia szwów, chronić operowaną okolicę przed urazami, unikać intensywnej mimiki i gwałtownego oczyszczania okolicy nosa, ograniczyć aktywność fizyczną przez 2–3 tygodnie oraz unikać ekspozycji na słońce i solarium przez 3–4 miesiące.",
+
+  "recommendations": {
+    "title": "Zalecenia dla pacjenta",
+    "items": [
+      "Unikanie moczenia rany do czasu zdjęcia szwów",
+      "Ochrona operowanej okolicy przed urazami",
+      "Unikanie intensywnej mimiki i gwałtownego oczyszczania okolicy nosa",
+      "Ograniczenie aktywności fizycznej przez 2–3 tygodnie",
+      "Unikanie ekspozycji na słońce i solarium przez 3–4 miesiące",
+      "Delikatne natłuszczanie blizny po zdjęciu szwów zgodnie z zaleceniami lekarza"
+    ]
+  }}}
+},
+  
+"breast": {
+  "title": "Chirurgia plastyczna piersi",
+  "procedures": {
+    "breast-augmentation": {
+      "title": "Powiększenie piersi implantami",
+
+      "description": "Powiększenie piersi implantami jest jednym z najczęściej wykonywanych zabiegów chirurgii plastycznej. Ma na celu zwiększenie rozmiaru biustu, poprawę jego kształtu i proporcji oraz symetrii piersi. Zabieg wykonywany jest w znieczuleniu ogólnym z użyciem implantów silikonowych umieszczanych pod mięśniem piersiowym, gruczołem piersiowym lub powięzią mięśnia. Dobór implantów odbywa się indywidualnie na podstawie anatomii pacjentki oraz jej oczekiwań estetycznych. Cięcie wykonywane jest najczęściej w bruździe podpiersiowej, rzadziej wokół otoczki brodawki. Zabieg trwa około 1–2 godzin. W wybranych przypadkach stosuje się drenaż. Pacjentka pozostaje w klinice około 1 dobę, a szwy usuwa się po około 14 dniach.",
+
+      "recommendations": {
+        "title": "Zalecenia dla pacjentki",
+        "items": [
+          "Noszenie stanika modelującego przez 2–3 miesiące",
+          "Unikanie moczenia ran do czasu zdjęcia szwów",
+          "Unikanie spania na brzuchu",
+          "Unikanie słońca i solarium przez 2 miesiące",
+          "Ochrona blizn przed słońcem przez 8–10 miesięcy",
+          "Unikanie wysiłku fizycznego przez 2 miesiące",
+          "Stosowanie preparatów na blizny przez 3 miesiące",
+          "Kontrolne USG piersi raz w roku",
+          "Świadomość możliwej przyszłej wymiany implantów"
+        ]
+      }
+    },
+
+    "breast-lift": {
+      "title": "Lifting (podniesienie) piersi",
+
+      "description": "Lifting piersi (mastopeksja) to zabieg chirurgiczny mający na celu uniesienie i wymodelowanie opadających piersi, poprawę ich kształtu, jędrności oraz symetrii. Zabieg wykonywany jest w znieczuleniu ogólnym i polega na usunięciu nadmiaru skóry, przemieszczeniu kompleksu brodawka–otoczka ku górze oraz modelowaniu gruczołu piersiowego. W wybranych przypadkach może być połączony z jednoczesnym powiększeniem piersi implantami. Cięcia prowadzone są wokół otoczki, pionowo w dół oraz w bruździe podpiersiowej. Zabieg trwa około 2–3 godziny, a szwy usuwa się po około 14 dniach.",
+
+      "recommendations": {
+        "title": "Zalecenia dla pacjentki",
+        "items": [
+          "Noszenie stanika modelującego przez 2–3 miesiące",
+          "Unikanie moczenia ran do czasu zdjęcia szwów",
+          "Unikanie spania na brzuchu",
+          "Unikanie słońca i solarium przez 2 miesiące",
+          "Ochrona blizn przed słońcem przez 8–10 miesięcy",
+          "Unikanie wysiłku fizycznego przez 2 miesiące",
+          "Stosowanie preparatów na blizny przez 3 miesiące",
+          "Kontrolne USG piersi raz w roku"
+        ]
+      }
+    },
+    "breast-lift-augmentation": {
+  "title": "Lifting piersi z powiększeniem implantami",
+
+  "description": "Lifting piersi z powiększeniem implantami to złożony zabieg chirurgiczny łączący uniesienie piersi z ich powiększeniem. Celem operacji jest poprawa kształtu, jędrności i symetrii biustu przy jednoczesnym zwiększeniu jego objętości. Zabieg wykonywany jest w znieczuleniu ogólnym i obejmuje usunięcie nadmiaru skóry, modelowanie gruczołu piersiowego, przemieszczenie kompleksu brodawka–otoczka ku górze oraz implantację odpowiednio dobranych implantów pod mięsień lub gruczoł piersiowy. Cięcia prowadzone są wokół otoczki, pionowo w dół oraz w bruździe podpiersiowej. Zabieg trwa około 2–3 godziny, a szwy usuwa się po około 14 dniach.",
+
+  "recommendations": {
+    "title": "Zalecenia dla pacjentki",
+    "items": [
+      "Noszenie stanika modelującego przez 2–3 miesiące",
+      "Unikanie moczenia ran do czasu zdjęcia szwów",
+      "Unikanie spania na brzuchu",
+      "Unikanie słońca i solarium przez 2 miesiące",
+      "Ochrona blizn przed słońcem przez 8–10 miesięcy",
+      "Unikanie wysiłku fizycznego przez 2 miesiące",
+      "Stosowanie preparatów na blizny przez 3 miesiące",
+      "Kontrolne USG piersi raz w roku",
+      "Świadomość możliwej wymiany implantów w przyszłości"
+    ]
   }
+},
+
+"breast-reduction-lift": {
+  "title": "Zmniejszenie i podniesienie piersi",
+
+  "description": "Zmniejszenie i podniesienie piersi to zabieg chirurgiczny polegający na redukcji objętości piersi oraz ich uniesieniu i wymodelowaniu. Operacja ma na celu usunięcie nadmiaru tkanki gruczołowej, tłuszczowej i skóry, a także poprawę symetrii i kształtu piersi. Wskazania obejmują zarówno względy estetyczne, jak i medyczne, takie jak bóle kręgosłupa, dyskomfort czy zmiany skórne. Zabieg wykonywany jest w znieczuleniu ogólnym i trwa około 2,5–4 godziny. Cięcia prowadzone są wokół otoczki, pionowo w dół oraz w bruździe podpiersiowej. W trakcie operacji może być zastosowany drenaż. Szwy usuwa się po około 14 dniach, a dreny po 1–3 dniach. Pacjentka pozostaje w klinice zwykle 1 dobę.",
+
+  "recommendations": {
+    "title": "Zalecenia dla pacjentki",
+    "items": [
+      "Noszenie stanika modelującego przez 3–4 miesiące",
+      "Unikanie moczenia ran do czasu zdjęcia szwów",
+      "Unikanie spania na brzuchu",
+      "Unikanie słońca i solarium przez 3 miesiące",
+      "Ochrona blizn przed słońcem przez 8–10 miesięcy",
+      "Unikanie wysiłku fizycznego przez 2 miesiące",
+      "Stosowanie preparatów na blizny przez 3 miesiące",
+      "Kontrolne USG piersi raz w roku",
+      "Pełna ocena efektu po 10–12 miesiącach"
+    ]
   }
+},
+
+"breast-reduction-lift": {
+  "title": "Zmniejszenie i podniesienie piersi",
+
+  "description": "Zmniejszenie i podniesienie piersi to zabieg chirurgii plastycznej polegający na redukcji objętości piersi oraz ich uniesieniu i wymodelowaniu. Celem operacji jest usunięcie nadmiaru tkanki gruczołowej, tłuszczowej i skóry, a także poprawa symetrii i kształtu piersi. Wskazania do zabiegu obejmują zarówno względy estetyczne, jak i medyczne, takie jak bóle kręgosłupa, dyskomfort oraz zmiany skórne w obrębie fałdu podpiersiowego. Zabieg wykonywany jest w znieczuleniu ogólnym i trwa około 2,5–4 godzin. Cięcia prowadzone są wokół otoczki, pionowo w dół oraz w bruździe podpiersiowej. W trakcie operacji może być zastosowany drenaż. Szwy usuwa się po około 14 dniach, a dreny po 1–3 dniach. Pacjentka pozostaje w klinice zazwyczaj 1 dobę.",
+
+  "recommendations": {
+    "title": "Zalecenia dla pacjentki",
+    "items": [
+      "Noszenie stanika modelującego przez 3–4 miesiące",
+      "Unikanie moczenia ran pooperacyjnych do czasu usunięcia szwów",
+      "Unikanie spania na brzuchu do czasu ustąpienia dolegliwości bólowych",
+      "Unikanie ekspozycji na słońce i solarium przez około 3 miesiące",
+      "Ochrona blizn przed promieniowaniem UV przez 8–10 miesięcy",
+      "Unikanie wysiłku fizycznego przez około 2 miesiące",
+      "Stosowanie preparatów na blizny przez około 3 miesiące",
+      "Kontrolne badanie USG piersi raz w roku",
+      "Ostateczna ocena efektu możliwa po 10–12 miesiącach"
+    ]
+  }
+},
+"implant-exchange": {
+  "title": "Wymiana implantów piersi",
+
+  "description": "Wymiana implantów piersi to zabieg chirurgiczny polegający na usunięciu wcześniej wszczepionych implantów i zastąpieniu ich nowymi. Wskazania do zabiegu mogą mieć charakter estetyczny lub medyczny. Do najczęstszych powodów estetycznych należą zmiana preferencji pacjentki co do kształtu i wielkości piersi, niewłaściwy dobór wcześniejszych implantów, przemieszczenie implantu lub zmiany związane z wiekiem, takie jak zwiotczenie tkanek. Wskazania medyczne obejmują m.in. pęknięcie implantu, powstanie torebki włóknistej powodującej deformację i ból oraz podejrzenie zmian patologicznych. Zabieg wykonywany jest w znieczuleniu ogólnym i trwa około 1–2,5 godziny. Cięcia prowadzone są najczęściej w obrębie istniejących blizn po wcześniejszej operacji. Usuwane są stare implanty, oceniana jest loża po implantach, a w razie potrzeby wykonywana jest kapsulektomia i wprowadzenie nowych implantów. W wybranych przypadkach stosuje się drenaż. Szwy usuwa się po około 14 dniach, a pacjentka pozostaje w klinice zwykle 1 dobę.",
+
+  "recommendations": {
+    "title": "Zalecenia dla pacjentki",
+    "items": [
+      "Noszenie stanika modelującego przez 2–3 miesiące",
+      "Unikanie moczenia ran pooperacyjnych do czasu usunięcia szwów",
+      "Unikanie spania na brzuchu",
+      "Unikanie słońca i solarium przez 3 miesiące",
+      "Ochrona blizn przed słońcem przez 8–10 miesięcy",
+      "Unikanie wysiłku fizycznego przez 2 miesiące",
+      "Stosowanie preparatów na blizny przez 3 miesiące",
+      "Kontrolne USG piersi raz w roku",
+      "Ocena efektu końcowego po 3–6 miesiącach"
+    ]
+  }
+},
+
+"nipple-correction": {
+  "title": "Plastyka wciągniętych brodawek sutkowych",
+
+  "description": "Plastyka wciągniętych brodawek sutkowych to zabieg chirurgiczny wykonywany w celu korekcji brodawek, które są wciągnięte lub nieprawidłowo ukształtowane. Schorzenie to może mieć charakter wrodzony i wynikać ze skrócenia przewodów mlecznych lub obecności zrostów. Problem ma znaczenie zarówno estetyczne, jak i funkcjonalne, ponieważ może utrudniać karmienie piersią oraz powodować dyskomfort psychiczny. Zabieg polega na uwolnieniu skróconych struktur oraz odpowiednim uformowaniu brodawki. Niewielkie nacięcia wykonywane są w obrębie brodawki lub jej podstawy, a następnie zakładane są delikatne szwy, które usuwa się po około 7–10 dniach. Blizny są zazwyczaj mało widoczne. Zabieg wykonywany jest w znieczuleniu miejscowym i trwa około 45 minut. Pacjentka wraca do domu tego samego dnia.",
+
+  "recommendations": {
+    "title": "Zalecenia dla pacjentki",
+    "items": [
+      "Unikanie moczenia ran do czasu zdjęcia szwów",
+      "Codzienna dezynfekcja ran środkiem bezalkoholowym",
+      "Stosowanie maści Nitrofurazon zgodnie z zaleceniem lekarza",
+      "Stosowanie chłodnych okładów na piersi",
+      "Unikanie wysiłku fizycznego przez około 4 tygodnie",
+      "Natłuszczanie brodawek po zdjęciu szwów preparatami Linomag lub Alantan"
+    ]
+  }
+}
+  }
+}
+
+
+
+
+}}
 }
