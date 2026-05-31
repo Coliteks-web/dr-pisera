@@ -13,14 +13,10 @@ const dictionaries: Record<Locale, Partial<Dictionary>> = {
   de,
 };
 
-type DictionaryValue = string | number | boolean | null | Dictionary | DictionaryValue[];
-
-// 🔥 type guard
 function isObject(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
 }
 
-// 🔥 deep merge bez any
 function deepMerge<T extends Record<string, unknown>>(
   base: T,
   override?: Partial<T>
@@ -46,7 +42,6 @@ function deepMerge<T extends Record<string, unknown>>(
   return result as T;
 }
 
-// 🔥 główna funkcja
 export function getDictionary(locale: Locale): Dictionary {
   const override = dictionaries[locale] ?? {};
   return deepMerge(pl as Dictionary, override);
