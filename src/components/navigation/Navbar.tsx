@@ -16,7 +16,7 @@ export default function Navbar({
   return (
     <header className="sticky top-0 z-50 border-b border-white/20 bg-white/70 backdrop-blur-2xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-        <Logo />
+        <Logo locale={locale} />
 
         <DesktopMenu
           dict={dict}
@@ -27,7 +27,9 @@ export default function Navbar({
           <LanguageSwitcher />
 
           <a
-            href="tel:+48502302660"
+            href="https://www.znanylekarz.pl/pawel-pisera/chirurg-plastyczny-chirurg/lodz"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden rounded-full bg-black px-5 py-3 text-sm text-white transition hover:bg-neutral-800 lg:block"
           >
             {dict.navbar.consultation}

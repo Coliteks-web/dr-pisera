@@ -251,5 +251,25 @@
         }
       ]
     }
+  },
+   "contact": {
+    "badge": "Kontakt",
+    "title": "Kontakt aufnehmen",
+    "description": "Für Beratungen und Behandlungen kontaktieren Sie uns bitte telefonisch oder per E-Mail.",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-Mail",
+    "appointmentsTitle": "Beratung vereinbaren",
+    "appointmentsDescription": "Termine können online über ZnanyLekarz vereinbart werden.",
+    "clinicsTitle": "Direkter Kontakt",
+    "operationsTitle": "Operationsstandorte"
+  },
+  "clinics": {
+    "badge": "Kliniken",
+    "title": "Beratungs- und Operationsstandorte",
+    "description": "Beratungen und Eingriffe werden in renommierten medizinischen Einrichtungen in Łódź durchgeführt.",
+    "consultationsTitle": "Beratungsstandorte",
+    "operationsTitle": "Operationsstandorte",
+    "registrationLabel": "Anmeldung",
+    "addressLabel": "Adresse"
   }
 }

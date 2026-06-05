@@ -1,5 +1,5 @@
-import ComingSoon from './coming-soon/page';
+import { redirect } from 'next/navigation';
 
 export default function HomePage() {
-  return <ComingSoon />;
+  redirect('/pl');
 }

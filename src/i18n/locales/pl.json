@@ -607,6 +607,26 @@
     "ctaPrimary": "Umów konsultację",
     "ctaSecondary": "Zobacz zabiegi",
     "highlight": "Naturalny efekt. Medyczna precyzja. Luksusowe podejście."
+  },
+  "contact": {
+    "badge": "Kontakt",
+    "title": "Skontaktuj się",
+    "description": "W sprawach związanych z konsultacjami i zabiegami zapraszamy do kontaktu telefonicznego lub mailowego.",
+    "phoneLabel": "Telefon",
+    "emailLabel": "Adres e-mail",
+    "appointmentsTitle": "Umów konsultację",
+    "appointmentsDescription": "Wizytę można umówić online za pośrednictwem serwisu ZnanyLekarz.",
+    "clinicsTitle": "Kontakt bezpośredni",
+    "operationsTitle": "Miejsca wykonywania operacji"
+  },
+  "clinics": {
+    "badge": "Kliniki",
+    "title": "Miejsca konsultacji i operacji",
+    "description": "Konsultacje oraz zabiegi wykonywane są w renomowanych placówkach medycznych w Łodzi.",
+    "consultationsTitle": "Miejsca konsultacji",
+    "operationsTitle": "Miejsca wykonywania operacji",
+    "registrationLabel": "Rejestracja",
+    "addressLabel": "Adres"
   }
 
 }

@@ -249,5 +249,27 @@
       }
     ]
   }
-}
+},
+
+  "contact": {
+    "badge": "Contact",
+    "title": "Get in touch",
+    "description": "For consultations and procedures, please contact us by phone or email.",
+    "phoneLabel": "Phone",
+    "emailLabel": "E-mail",
+    "appointmentsTitle": "Book a consultation",
+    "appointmentsDescription": "Appointments can be booked online through ZnanyLekarz.",
+    "clinicsTitle": "Direct contact",
+    "operationsTitle": "Surgery locations"
+  },
+  "clinics": {
+    "badge": "Clinics",
+    "title": "Consultation and surgery locations",
+    "description": "Consultations and procedures are performed in reputable medical facilities in Łódź.",
+    "consultationsTitle": "Consultation locations",
+    "operationsTitle": "Surgery locations",
+    "registrationLabel": "Registration",
+    "addressLabel": "Address"
+  }
+
 }
