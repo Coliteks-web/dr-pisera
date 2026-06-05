@@ -4,8 +4,10 @@ import MobileMenu from './MobileMenu';
 import LanguageSwitcher from './LanguageSwitcher';
 
 import type { Dictionary } from '@/types/dictionary';
+import type { Locale } from '@/i18n/config';
+
 type NavbarProps = {
-  locale: string;
+  locale: Locale;
   dict: Dictionary;
 };
 
@@ -30,7 +32,7 @@ export default function Navbar({
             href="https://www.znanylekarz.pl/pawel-pisera/chirurg-plastyczny-chirurg/lodz"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden rounded-full bg-black px-5 py-3 text-sm text-white transition hover:bg-neutral-800 lg:block"
+            className="hidden rounded-full bg-black px-5 py-3 text-sm text-white transition hover:bg-neutral-800 lg:inline-flex"
           >
             {dict.navbar.consultation}
           </a>
