@@ -3,13 +3,13 @@ import { getDictionary } from '@/i18n/getDictionary';
 import type { Locale } from '@/i18n';
 
 type PageProps = {
-  params: Promise<{
+  params: {
     locale: Locale;
-  }>;
+  };
 };
 
 export default async function Page({ params }: PageProps) {
-  const { locale } = await params;
+  const { locale } = params;
 
   const dict = await getDictionary(locale);
 

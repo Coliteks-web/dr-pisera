@@ -6,15 +6,24 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import type { Dictionary } from '@/types/dictionary';
+
+type MobileMenuProps = {
+  locale: string;
+  dict: Dictionary;
+};
+
 export default function MobileMenu({
   dict,
   locale,
-}: any) {
+}: MobileMenuProps) {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
 
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
@@ -26,16 +35,16 @@ export default function MobileMenu({
   if (!mounted) return null;
 
   const nav = [
-    { href: 'about', label: dict?.navbar?.about },
-    { href: 'procedures', label: dict?.navbar?.procedures },
-    { href: 'pricing', label: dict?.navbar?.pricing },
-    { href: 'clinics', label: dict?.navbar?.clinics },
-    { href: 'contact', label: dict?.navbar?.contact },
+    { href: 'about', label: dict.navbar.about },
+    { href: 'procedures', label: dict.navbar.procedures },
+    { href: 'pricing', label: dict.navbar.pricing },
+    { href: 'clinics', label: dict.navbar.clinics },
+    { href: 'contact', label: dict.navbar.contact },
   ];
 
   return (
     <>
-      {/* HAMBURGER (clean + always visible) */}
+      {/* HAMBURGER */}
       <button
         className="lg:hidden w-10 h-10 flex items-center justify-center"
         onClick={() => setOpen(true)}
@@ -48,13 +57,14 @@ export default function MobileMenu({
         </div>
       </button>
 
+      {/* MENU PORTAL */}
       {mounted &&
         createPortal(
           <AnimatePresence>
             {open && (
               <div className="fixed inset-0 z-[99999]">
-                
-                {/* BACKDROP (iOS blur + dim) */}
+
+                {/* BACKDROP */}
                 <motion.div
                   className="absolute inset-0 bg-black/40 backdrop-blur-md"
                   initial={{ opacity: 0 }}
@@ -81,9 +91,9 @@ export default function MobileMenu({
                     if (info.offset.x > 120) setOpen(false);
                   }}
                 >
-                  
+
                   {/* HEADER */}
-                  <div className="flex items-center justify-between border-b p-6 bg-white/70 backdrop-blur-xl">
+                  <div className="flex items-center justify-between border-b p-6 bg-white/80 backdrop-blur-xl">
                     <span className="text-lg font-semibold">
                       Menu
                     </span>
@@ -97,8 +107,8 @@ export default function MobileMenu({
                   </div>
 
                   {/* CONTENT */}
-                  <div className="h-[calc(100vh-73px)] overflow-y-auto px-6 py-4">
-                    <nav className="flex flex-col">
+                  <div className="h-[calc(100vh-73px)] overflow-y-auto">
+                    <nav className="flex flex-col px-6 py-4">
 
                       {nav.map((item) => {
                         const isActive =
