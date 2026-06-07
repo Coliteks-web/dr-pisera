@@ -600,14 +600,27 @@
 }},
 
   "hero": {
-    "title": "Chirurgia plastyczna w standardzie premium",
-    "subtitle": "Precyzja, estetyka i bezpieczeństwo w nowoczesnej medycynie",
-    "description": "Nowoczesna chirurgia plastyczna łączy zaawansowaną technologię, wieloletnie doświadczenie i wyczucie estetyki. Każdy zabieg wykonywany jest z najwyższą dbałością o proporcje, naturalny efekt i komfort pacjenta.",
-    "descriptionSecondary": "Naszym celem jest subtelna poprawa wyglądu, która podkreśla naturalne piękno, przy zachowaniu pełnego bezpieczeństwa i indywidualnego podejścia do każdego przypadku.",
-    "ctaPrimary": "Umów konsultację",
-    "ctaSecondary": "Zobacz zabiegi",
-    "highlight": "Naturalny efekt. Medyczna precyzja. Luksusowe podejście."
-  },
+  "kicker": "Klinika chirurgii plastycznej",
+
+  "title": "Chirurgia plastyczna w standardzie premium",
+  "subtitle": "Precyzja, estetyka i bezpieczeństwo w nowoczesnej medycynie",
+
+  "description": "Nowoczesna chirurgia plastyczna łączy zaawansowaną technologię, wieloletnie doświadczenie i wyczucie estetyki. Każdy zabieg wykonywany jest z najwyższą dbałością o proporcje, naturalny efekt i komfort pacjenta.",
+
+  "descriptionSecondary": "Naszym celem jest subtelna poprawa wyglądu, która podkreśla naturalne piękno, przy zachowaniu pełnego bezpieczeństwa i indywidualnego podejścia do każdego przypadku.",
+
+  "ctaPrimary": "Umów konsultację",
+  "ctaSecondary": "Zobacz zabiegi",
+
+  "highlight": "Naturalny efekt. Medyczna precyzja. Luksusowe podejście.",
+
+  "badgeTop": "Chirurgia plastyczna",
+  "badgeBottomLine1": "Naturalne efekty",
+  "badgeBottomLine2": "i medyczna precyzja",
+
+  "trustTitle": "Standard kliniczny",
+  "trustDescription": "Bezpieczeństwo i certyfikacja"
+},
   "contact": {
     "badge": "Kontakt",
     "title": "Skontaktuj się",

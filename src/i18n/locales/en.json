@@ -274,6 +274,28 @@
    "logo": {
     "name": "Paweł Pisera, MD, PhD",
     "specialty": "Plastic Surgery"
-  }
+  },
+  "hero": {
+  "kicker": "Plastic Surgery Clinic",
+
+  "title": "Plastic surgery at a premium standard",
+  "subtitle": "Precision, aesthetics, and safety in modern medicine",
+
+  "description": "Modern plastic surgery combines advanced technology, years of experience, and a refined sense of aesthetics. Every procedure is performed with the highest attention to proportion, natural results, and patient comfort.",
+
+  "descriptionSecondary": "Our goal is a subtle enhancement of appearance that highlights natural beauty while maintaining full safety and an individualized approach to each case.",
+
+  "ctaPrimary": "Book a consultation",
+  "ctaSecondary": "View procedures",
+
+  "highlight": "Natural results. Medical precision. Luxury approach.",
+
+  "badgeTop": "Plastic surgery",
+  "badgeBottomLine1": "Natural results",
+  "badgeBottomLine2": "and medical precision",
+
+  "trustTitle": "Clinical standard",
+  "trustDescription": "Safety and certification"
+}
 
 }

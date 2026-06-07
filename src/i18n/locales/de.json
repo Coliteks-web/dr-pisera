@@ -275,6 +275,28 @@
    "logo": {
     "name": "Dr. med. Paweł Pisera",
     "specialty": "Plastische Chirurgie"
-  }
+  },
+  "hero": {
+  "kicker": "Klinik für plastische Chirurgie",
+
+  "title": "Plastische Chirurgie auf Premium-Niveau",
+  "subtitle": "Präzision, Ästhetik und Sicherheit in der modernen Medizin",
+
+  "description": "Die moderne plastische Chirurgie verbindet fortschrittliche Technologie, langjährige Erfahrung und ein ausgeprägtes ästhetisches Gespür. Jeder Eingriff wird mit höchster Sorgfalt für Proportionen, natürliche Ergebnisse und Patientenkomfort durchgeführt.",
+
+  "descriptionSecondary": "Unser Ziel ist eine subtile Verbesserung des Aussehens, die die natürliche Schönheit unterstreicht und gleichzeitig volle Sicherheit sowie eine individuelle Betreuung gewährleistet.",
+
+  "ctaPrimary": "Beratung vereinbaren",
+  "ctaSecondary": "Eingriffe ansehen",
+
+  "highlight": "Natürliche Ergebnisse. Medizinische Präzision. Luxuriöser Ansatz.",
+
+  "badgeTop": "Plastische Chirurgie",
+  "badgeBottomLine1": "Natürliche Ergebnisse",
+  "badgeBottomLine2": "und medizinische Präzision",
+
+  "trustTitle": "Klinischer Standard",
+  "trustDescription": "Sicherheit und Zertifizierung"
+}
 
 }
