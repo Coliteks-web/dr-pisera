@@ -271,5 +271,10 @@
     "operationsTitle": "Operationsstandorte",
     "registrationLabel": "Anmeldung",
     "addressLabel": "Adresse"
+  },
+   "logo": {
+    "name": "Dr. med. Paweł Pisera",
+    "specialty": "Plastische Chirurgie"
   }
+
 }

@@ -627,6 +627,10 @@
     "operationsTitle": "Miejsca wykonywania operacji",
     "registrationLabel": "Rejestracja",
     "addressLabel": "Adres"
+  },
+   "logo": {
+    "name": "Dr n. med. Paweł Pisera",
+    "specialty": "Chirurgia Plastyczna"
   }
 
 }

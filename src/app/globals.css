@@ -17,8 +17,12 @@ body {
   font-style: normal;
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
+#__next {
+  isolation: isolate;
+}
 
 * {
   box-sizing: border-box;
@@ -43,4 +47,42 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+@keyframes handwritingFade {
+  0% {
+    opacity: 0;
+    transform: translateY(2px);
+    filter: blur(2px);
+    letter-spacing: 0.2em;
+  }
+
+  40% {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  100% {
+    transform: translateY(0);
+    letter-spacing: normal;
+  }
+}
+
+/* delikatny „hand jitter” */
+@keyframes microShake {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(0.3px, -0.2px); }
+  50% { transform: translate(-0.3px, 0.2px); }
+  75% { transform: translate(0.2px, 0.1px); }
+  100% { transform: translate(0, 0); }
+}
+
+.signature-handwriting {
+  animation: handwritingFade 0.6s ease-out;
+  display: inline-block;
+}
+
+/* aktywne pisanie = lekki „żywy ruch” */
+.signature-handwriting:has(+ span) {
+  animation: microShake 0.12s infinite;
 }

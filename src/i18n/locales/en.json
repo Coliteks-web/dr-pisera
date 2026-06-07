@@ -270,6 +270,10 @@
     "operationsTitle": "Surgery locations",
     "registrationLabel": "Registration",
     "addressLabel": "Address"
+  },
+   "logo": {
+    "name": "Paweł Pisera, MD, PhD",
+    "specialty": "Plastic Surgery"
   }
 
 }

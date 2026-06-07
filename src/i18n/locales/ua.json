@@ -266,5 +266,9 @@
     "operationsTitle": "Місця проведення операцій",
     "registrationLabel": "Реєстрація",
     "addressLabel": "Адреса"
+  },
+   "logo": {
+    "name": "Павло Пісера, MD, PhD",
+    "specialty": "Пластична хірургія"
   }
 }
